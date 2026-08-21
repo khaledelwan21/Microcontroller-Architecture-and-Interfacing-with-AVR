@@ -1,0 +1,166 @@
+01:49:37 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:50:37 **** Incremental Build of configuration Debug for project test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:50:38 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:51:58 **** Incremental Build of configuration Debug for project test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:51:59 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Building target: test2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,test2.map -mmcu=atmega32 -o "test2.elf"  ./main.o   
+Finished building target: test2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S test2.elf  >"test2.lss"
+Finished building: test2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex test2.elf  "test2.hex"
+Finished building: test2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:52:04 **** Incremental Build of configuration Debug for project test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:52:04 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:53:08 **** Incremental Build of configuration Debug for project test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:53:08 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     150 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
