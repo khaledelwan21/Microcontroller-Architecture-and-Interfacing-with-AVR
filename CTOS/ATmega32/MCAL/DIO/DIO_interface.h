@@ -144,7 +144,7 @@ Std_ReturnType DIO_SetPortValue(u8 Copy_PortId, u8 Copy_PortValue);
  *
  * @note This function allows you to get the input values for all pins of a specific port simultaneously.
  */
-Std_ReturnType DIO_GetPortValue(u8 Copy_u8portId, u8 *Copy_ReturnedPortValue);
+Std_ReturnType DIO_GetPortValue(u8 Copy_PortId, u8 *Copy_ReturnedPortValue);
 
 /**
  * @} DIO_Functions

@@ -1,16 +1,8 @@
 /*
- * main.c
+ * 		main.c
  *
- *  Created on: Aug 23, 2026
+ *  	Created on: Aug 23, 2026
  *      Author: khaled
- */
-
-
-/*
- *  file Name : main.c
- *  Created on: ??‏/??‏/???? at ?:??:?? م
- *  Author    : Ziad_Elmeakwy
- *  Description :
  */
 
 #include <util/delay.h>

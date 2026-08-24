@@ -38,17 +38,8 @@
 #define DIO_PINA         *((volatile u8*)0X39)
 #define DIO_PINB         *((volatile u8*)0X36)
 #define DIO_PINC         *((volatile u8*)0X33)
-#define DIO_PIN          *((volatile u8*)0X30)
+#define DIO_PIND         *((volatile u8*)0X30)
 
-/**
- * @brief Macros for Pin Direction.
- *
- * These macros define the possible directions a pin can have:
- * - DIO_INITIAL_OUTPUT: Set the pin as an output.
- * - DIO_INITIAL_INPUT: Set the pin as an input.
- */
-#define DIO_INITIAL_OUTPUT  1
-#define DIO_INITIAL_INPUT   0
 
 /**
  * @brief Macros for Pin Values.
