@@ -1,0 +1,30 @@
+/*
+ * 		main.c
+ *
+ *  	Created on: Aug 23, 2026
+ *      Author: khaled
+ */
+
+#include <util/delay.h>
+#include "DIO_interface.h"
+#include "STD_TYPES.h"
+#define F_CPU	8000000UL
+
+int main()
+{
+	DIO_SetPortDirection(PORTA ,0xFF) ;
+	while(1)
+	{
+		for(int i=1 ;i<256;i=i*2+1)
+		{
+				DIO_SetPortValue(PORTA, i) ;
+				_delay_ms(10) ;
+		}
+		for (int i=255 ; i>0 ; i=i/2)
+		{
+			DIO_SetPortValue(PORTA, i) ;
+			_delay_ms(10) ;
+		}
+	}
+	return 0;
+}

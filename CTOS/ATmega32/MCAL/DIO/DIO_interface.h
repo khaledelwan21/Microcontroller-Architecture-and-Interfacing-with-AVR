@@ -39,7 +39,10 @@
 #define DIO_HIGH      1 /**< High Pin Value */
 #define DIO_LOW       0 /**< Low Pin Value */
 
+#define PullUp    0
+#define NotPullUp 1
 
+#define SFIOR_PUD  2
 /**
  * @brief Set the direction (input/output) of a specific pin in a given port.
  *
@@ -109,6 +112,10 @@ Std_ReturnType DIO_GetPinValue(u8 Copy_PortId, u8 Copy_PinId, u8 *Copy_ReturnedP
  *
  * @note You should call this function to configure the entire port as input or output.
  */
+
+Std_ReturnType DIO_SetPin_PullUp(u8 Copy_PortId,u8 Copy_PinId,u8 Copy_PullUP_NotPullUP) ;
+
+
 Std_ReturnType DIO_SetPortDirection(u8 Copy_PortId, u8 Copy_PortDirection);
 
 /**
@@ -149,6 +156,7 @@ Std_ReturnType DIO_GetPortValue(u8 Copy_PortId, u8 *Copy_ReturnedPortValue);
 /**
  * @} DIO_Functions
  */
+
 
 
 #endif /**< __DIO_INTERFACE_H_ */

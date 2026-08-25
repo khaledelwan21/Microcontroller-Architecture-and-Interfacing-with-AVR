@@ -1,0 +1,48 @@
+/*
+ * 		main.c
+ *
+ *  	Created on: Aug 23, 2026
+ *      Author: khaled
+ */
+
+#include <util/delay.h>
+#include "DIO_interface.h"
+#include "STD_TYPES.h"
+#define F_CPU	8000000UL
+char value ,var=1 ;
+int main()
+{
+//	DIO_SetPortDirection(PORTA ,0xFF) ;
+	DIO_SetPinDirection(PORTA,DIO_PIN7, DIO_OUTPUT) ;
+	DIO_SetPinDirection(PORTD,DIO_PIN7, DIO_INPUT) ;
+	DIO_SetPin_PullUp(PORTD,DIO_PIN7,PullUp) ;
+	while(1)
+	{
+		DIO_GetPinValue(PORTD,DIO_PIN7, &value) ;
+		if (var==0 && value ==0 )
+		{
+			DIO_SetPinValue(PORTA,DIO_PIN7,DIO_HIGH) ;
+			var =1 ;
+			_delay_ms(10) ;
+		}
+		else if(var==1 && value ==0) {
+			DIO_SetPinValue(PORTA,DIO_PIN7,DIO_LOW) ;
+			var =0 ;
+			_delay_ms(10) ;
+		}
+
+
+/*
+		for(int i=0 ;i<256;i=i*2+1)
+		{
+				DIO_SetPortValue(PORTA, i) ;
+				_delay_ms(10) ;
+		}
+		for (int i=255 ; i>0 ; i=i/2)
+		{
+			DIO_SetPortValue(PORTA, i) ;
+			_delay_ms(10) ;
+		}*/
+	}
+	return 0;
+}

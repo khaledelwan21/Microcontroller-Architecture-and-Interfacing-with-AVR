@@ -1,0 +1,24 @@
+
+/****************************************************************/
+/******* Author    : Khaled Ahmed Elwan         *****************/
+/******* Date      : 23 Aug 2026                *****************/
+/******* Version   : 1.0                        *****************/
+/******* File Name : 7SEGMENT.c            *****************/
+/****************************************************************/
+
+
+#include "7SEGMENT.h"
+#include "../../MCAL/DIO/DIO_interface.h"
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+void  SEG_Init( seg_type seg )
+{
+	DIO_SetPinDirection(seg.port, seg.pin, DIO_OUTPUT) ;
+}
+
+void SEG_display (seg_type seg )
+{
+	DIO_SetPinValue(seg.port , seg.pin , DIO_HIGH) ;
+}
+

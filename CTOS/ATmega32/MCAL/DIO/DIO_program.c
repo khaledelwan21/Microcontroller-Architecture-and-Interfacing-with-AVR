@@ -140,12 +140,85 @@ Std_ReturnType DIO_GetPinValue(u8 Copy_PortId, u8 Copy_PinId, u8 *Copy_ReturnedP
 
     return Local_FuncStatus;
 }
+Std_ReturnType DIO_SetPin_PullUp(u8 Copy_PortId,u8 Copy_PinId,u8 Copy_PullUP_NotPullUP)
+{
+    Std_ReturnType Local_FuncStatus = E_NOT_OK;
+
+    if ((Copy_PortId < 4) &&(Copy_PinId < 8) &&((Copy_PullUP_NotPullUP == PullUp) ||(Copy_PullUP_NotPullUP == NotPullUp)))
+    {
+    	CLR_BIT(SFIOR, Copy_PinId);
+        switch (Copy_PortId)
+        {
+            case PORTA:
+
+                if (Copy_PullUP_NotPullUP == PullUp)
+                {
+                    SET_BIT(DIO_PORTA, Copy_PinId);
+                }
+                else
+                {
+                    CLR_BIT(DIO_PORTA, Copy_PinId);
+                }
+
+                Local_FuncStatus = E_OK;
+                break;
+
+            case PORTB:
+
+                if (Copy_PullUP_NotPullUP == PullUp)
+                {
+                    SET_BIT(DIO_PORTB, Copy_PinId);
+                }
+                else
+                {
+                    CLR_BIT(DIO_PORTB, Copy_PinId);
+                }
+
+                Local_FuncStatus = E_OK;
+                break;
+
+            case PORTC:
+
+                if (Copy_PullUP_NotPullUP == PullUp)
+                {
+                    SET_BIT(DIO_PORTC, Copy_PinId);
+                }
+                else
+                {
+                    CLR_BIT(DIO_PORTC, Copy_PinId);
+                }
+
+                Local_FuncStatus = E_OK;
+                break;
+
+            case PORTD:
+
+                if (Copy_PullUP_NotPullUP == PullUp)
+                {
+                    SET_BIT(DIO_PORTD, Copy_PinId);
+                }
+                else
+                {
+                    CLR_BIT(DIO_PORTD, Copy_PinId);
+                }
+
+                Local_FuncStatus = E_OK;
+                break;
+
+            default:
+                Local_FuncStatus = E_NOT_OK;
+                break;
+        }
+    }
+
+    return Local_FuncStatus;
+}
 
 Std_ReturnType DIO_SetPortDirection(u8 Copy_PortId, u8 Copy_PortDirection)
 {
     Std_ReturnType Local_FuncStatus = E_NOT_OK;
 
-    if (Copy_PortId < 4)
+    if (Copy_PortId < 4 )
     {
         switch (Copy_PortId)
         {

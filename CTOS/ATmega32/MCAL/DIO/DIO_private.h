@@ -7,10 +7,7 @@
 
 #ifndef __DIO_PRIVATE_H_
 #define __DIO_PRIVATE_H_
-
-#include "../LIB/STD_TYPES.h"
-#include "../LIB/BIT_MATH.h"
-/**
+/*
  * @brief Macro definitions for PORT registers.
  *
  * These macros define the register addresses for PORTA, PORTB, PORTC, and PORTD.
@@ -40,6 +37,7 @@
 #define DIO_PINC         *((volatile u8*)0X33)
 #define DIO_PIND         *((volatile u8*)0X30)
 
+#define SFIOR            *((volatile u8*)0X50)
 
 /**
  * @brief Macros for Pin Values.

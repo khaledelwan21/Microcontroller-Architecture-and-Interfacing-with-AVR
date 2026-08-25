@@ -4,5 +4,5 @@
 <listEntry value="org.eclipse.ui.externaltools.launchGroup"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="D:\01- Embedded Systems AVR Tools-20260212T180018Z-1-001\01- Embedded Systems AVR Tools\01- IMT SDK\IMT_SDK_Win_64\WinAVR\bin\avrdude.exe"/>
-<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-c usbasp -p m32 -B 10 -U flash:w:&quot;${selected_resource_loc}\Debug\${selected_resource_name}.hex&quot;:i"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-c usbasp -p m32 -B 10 -U&#13;&#10;flash:w:&quot;${project_loc}\Debug\${project_name}.hex&quot;:i"/>
 </launchConfiguration>

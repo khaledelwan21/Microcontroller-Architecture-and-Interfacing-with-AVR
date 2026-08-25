@@ -1322,3 +1322,2874 @@ Data:          8 bytes (0.4% Full)
 
 Finished building: sizedummy
  
+08:12:11 **** Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:12:50 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:15:49 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:16:03 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:18:35 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:18:51 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:19:25 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:23:36 **** Clean-only build of configuration Debug for project DIO_test ****
+make clean 
+rm -rf  DIO_test.hex  ./DIO_program.o ./main.o  sizedummy  DIO_test.lss  ./DIO_program.d ./main.d  DIO_test.elf
+ 
+08:23:39 **** Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4714 bytes (14.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:32:14 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:20: error: too many arguments to function 'DIO_SetPortValue'
+make: *** [main.o] Error 1
+08:32:36 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+./main.o: In function `main':
+../main.c:15: undefined reference to `DIO_SetPortDirection'
+../main.c:18: undefined reference to `DIO_SetPortValue'
+../main.c:20: undefined reference to `DIO_SetPortValue'
+make: *** [DIO_test.elf] Error 1
+08:34:15 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+./main.o: In function `main':
+../main.c:15: undefined reference to `DIO_SetPortDirection'
+../main.c:18: undefined reference to `DIO_SetPortValue'
+../main.c:20: undefined reference to `DIO_SetPortValue'
+make: *** [DIO_test.elf] Error 1
+08:35:38 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+./main.o: In function `main':
+../main.c:15: undefined reference to `DIO_SetPortDirection'
+../main.c:18: undefined reference to `DIO_SetPortValue'
+../main.c:20: undefined reference to `DIO_SetPortValue'
+make: *** [DIO_test.elf] Error 1
+08:37:23 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5566 bytes (17.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:37:34 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5566 bytes (17.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:43:52 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5566 bytes (17.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:44:00 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5566 bytes (17.0% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:03:50 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5668 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:04:14 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5668 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:12:13 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5662 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:13:02 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5662 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:16:11 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5662 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:16:30 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5662 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:18:52 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5664 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:19:01 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5664 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:30:59 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5664 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:31:42 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5664 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:35:26 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5668 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:35:34 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5668 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:37:37 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5664 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:37:57 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5664 bytes (17.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:24:19 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+../DIO_program.c: In function 'DIO_SetPin_PullUp':
+../DIO_program.c:147: error: 'PullUp' undeclared (first use in this function)
+../DIO_program.c:147: error: (Each undeclared identifier is reported only once
+../DIO_program.c:147: error: for each function it appears in.)
+make: *** [DIO_program.o] Error 1
+10:25:47 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6208 bytes (18.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:06:32 **** Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:21: warning: pointer targets in passing argument 3 of 'DIO_GetPinValue' differ in signedness
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2866 bytes (8.7% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:06:55 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2866 bytes (8.7% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:10:43 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:21: warning: pointer targets in passing argument 3 of 'DIO_GetPinValue' differ in signedness
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2886 bytes (8.8% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:11:02 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2886 bytes (8.8% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:12:37 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:21: warning: pointer targets in passing argument 3 of 'DIO_GetPinValue' differ in signedness
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6220 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:12:47 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6220 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:15:55 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:21: warning: pointer targets in passing argument 3 of 'DIO_GetPinValue' differ in signedness
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6220 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:21:07 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:21: error: 'value' undeclared (first use in this function)
+../main.c:21: error: (Each undeclared identifier is reported only once
+../main.c:21: error: for each function it appears in.)
+make: *** [main.o] Error 1
+11:22:35 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:21: warning: pointer targets in passing argument 3 of 'DIO_GetPinValue' differ in signedness
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6218 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:23:14 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6218 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:42:08 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6224 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:43:44 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6224 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:44:13 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6224 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:47:19 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5936 bytes (18.1% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:55:07 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6226 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:56:07 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6226 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:56:22 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6222 bytes (19.0% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:20:51 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:21:14 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:22:29 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:22:35 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:25:55 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:26:58 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:27:20 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:29:50 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:29:55 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:31:12 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:31:21 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2778 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:34:36 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2786 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:34:44 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2786 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:36:16 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:19: error: too few arguments to function 'DIO_SetPortValue'
+make: *** [main.o] Error 1
+04:36:24 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2786 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:36:29 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2786 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:43:13 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2786 bytes (8.5% Full)
+(.text + .data + .bootloader)
+
+Data:          2 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:48:07 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:84: warning: suggest parentheses around assignment used as truth value
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2962 bytes (9.0% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:49:53 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2962 bytes (9.0% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:55:45 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:28: warning: 'button1_prev' defined but not used
+../main.c:28: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3068 bytes (9.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+04:56:00 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3068 bytes (9.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+06:47:44 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:28: warning: 'button1_prev' defined but not used
+../main.c:28: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3068 bytes (9.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:20:19 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+In file included from ../DIO_program.c:12:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:11: error: stray '@' in program
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Macro'
+make: *** [DIO_program.o] Error 1
+08:21:06 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3068 bytes (9.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:35:37 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+In file included from ../LED.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:13:25: error: DIO_interface: No such file or directory
+In file included from ../LED.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:17: error: expected specifier-qualifier-list before 'u8'
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'led_type' has no member named 'port'
+../LED.c:17: error: 'led_type' has no member named 'pin'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'led_type' has no member named 'port'
+../LED.c:22: error: 'led_type' has no member named 'pin'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'led_type' has no member named 'port'
+../LED.c:27: error: 'led_type' has no member named 'pin'
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:37:33 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+In file included from ../LED.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:13:25: error: DIO_interface: No such file or directory
+In file included from ../LED.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:17: error: expected specifier-qualifier-list before 'u8'
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'led_type' has no member named 'port'
+../LED.c:17: error: 'led_type' has no member named 'pin'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'led_type' has no member named 'port'
+../LED.c:22: error: 'led_type' has no member named 'pin'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'led_type' has no member named 'port'
+../LED.c:27: error: 'led_type' has no member named 'pin'
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:37:50 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+In file included from ../LED.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:13:25: error: DIO_interface: No such file or directory
+In file included from ../LED.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:17: error: expected specifier-qualifier-list before 'u8'
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'led_type' has no member named 'port'
+../LED.c:17: error: 'led_type' has no member named 'pin'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'led_type' has no member named 'port'
+../LED.c:22: error: 'led_type' has no member named 'pin'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'led_type' has no member named 'port'
+../LED.c:27: error: 'led_type' has no member named 'pin'
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:40:07 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+../LED.c:11:25: error: DIO_interface: No such file or directory
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:41:13 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+../LED.c:11:25: error: DIO_interface: No such file or directory
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:41:48 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+../LED.c:11:25: error: DIO_interface: No such file or directory
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:42:06 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+../LED.c:11:25: error: DIO_interface: No such file or directory
+../LED.c: In function 'LED_Init':
+../LED.c:17: warning: implicit declaration of function 'DIO_SetPinDirection'
+../LED.c:17: error: 'DIO_OUTPUT' undeclared (first use in this function)
+../LED.c:17: error: (Each undeclared identifier is reported only once
+../LED.c:17: error: for each function it appears in.)
+../LED.c: In function 'LED_ON':
+../LED.c:22: warning: implicit declaration of function 'DIO_SetPinValue'
+../LED.c:22: error: 'DIO_HIGH' undeclared (first use in this function)
+../LED.c: In function 'LED_OFF':
+../LED.c:27: error: 'DIO_LOW' undeclared (first use in this function)
+make: *** [LED.o] Error 1
+08:43:22 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:29: warning: 'button1_prev' defined but not used
+../main.c:29: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2918 bytes (8.9% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:44:54 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2918 bytes (8.9% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:01:33 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[0]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[1]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[2]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[3]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[4]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[5]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[6]')
+../main.c:40: error: initializer element is not constant
+../main.c:40: error: (near initialization for 'LED[7]')
+../main.c:41: warning: data definition has no type or storage class
+../main.c:41: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:41: warning: parameter names (without types) in function declaration
+../main.c:41: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:42: warning: data definition has no type or storage class
+../main.c:42: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:42: warning: parameter names (without types) in function declaration
+../main.c:42: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:43: warning: data definition has no type or storage class
+../main.c:43: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:43: warning: parameter names (without types) in function declaration
+../main.c:43: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:44: warning: data definition has no type or storage class
+../main.c:44: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:44: warning: parameter names (without types) in function declaration
+../main.c:44: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:45: warning: data definition has no type or storage class
+../main.c:45: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:45: warning: parameter names (without types) in function declaration
+../main.c:45: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:46: warning: data definition has no type or storage class
+../main.c:46: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:46: warning: parameter names (without types) in function declaration
+../main.c:46: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:47: warning: data definition has no type or storage class
+../main.c:47: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:47: warning: parameter names (without types) in function declaration
+../main.c:47: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+../main.c:48: warning: data definition has no type or storage class
+../main.c:48: warning: type defaults to 'int' in declaration of 'LED_Init'
+../main.c:48: warning: parameter names (without types) in function declaration
+../main.c:48: error: conflicting types for 'LED_Init'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED/LED.h:24: error: previous declaration of 'LED_Init' was here
+make: *** [main.o] Error 1
+09:03:49 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:29: warning: 'button1_prev' defined but not used
+../main.c:29: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6390 bytes (19.5% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:04:08 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6390 bytes (19.5% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:07:05 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:29: warning: 'button1_prev' defined but not used
+../main.c:29: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6386 bytes (19.5% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:08:41 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6386 bytes (19.5% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:26:36 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+../BUZZER.c: In function 'BUZZER_Init':
+../BUZZER.c:17: error: 'buzzer' undeclared (first use in this function)
+../BUZZER.c:17: error: (Each undeclared identifier is reported only once
+../BUZZER.c:17: error: for each function it appears in.)
+../BUZZER.c: In function 'BUZZER_ON':
+../BUZZER.c:22: error: 'buzzer' undeclared (first use in this function)
+../BUZZER.c: In function 'BUZZER_OFF':
+../BUZZER.c:27: error: 'buzzer' undeclared (first use in this function)
+make: *** [BUZZER.o] Error 1
+09:28:04 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+../BUZZER.c: In function 'BUZZER_ON':
+../BUZZER.c:22: error: 'buzzer' undeclared (first use in this function)
+../BUZZER.c:22: error: (Each undeclared identifier is reported only once
+../BUZZER.c:22: error: for each function it appears in.)
+../BUZZER.c: In function 'BUZZER_OFF':
+../BUZZER.c:27: error: 'buzzer' undeclared (first use in this function)
+make: *** [BUZZER.o] Error 1
+09:28:59 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+Finished building: ../BUZZER.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+make: *** [main.o] Error 1
+09:29:10 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:30: warning: 'button1_prev' defined but not used
+../main.c:30: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./BUZZER.o ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6496 bytes (19.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:30:21 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:30: warning: 'button1_prev' defined but not used
+../main.c:30: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./BUZZER.o ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6520 bytes (19.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:30:47 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6520 bytes (19.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:32:20 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:30: warning: 'button1_prev' defined but not used
+../main.c:30: warning: 'button2_prev' defined but not used
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./BUZZER.o ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6532 bytes (19.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:33:24 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6532 bytes (19.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:45:07 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6532 bytes (19.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:00:17 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6532 bytes (19.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:40:51 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+Finished building: ../BUZZER.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:12:20: error: 7SEGMENT: No such file or directory
+../main.c:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'seg1'
+../main.c: In function 'main':
+../main.c:85: warning: implicit declaration of function 'SEG_Init'
+../main.c:85: error: 'seg1' undeclared (first use in this function)
+../main.c:85: error: (Each undeclared identifier is reported only once
+../main.c:85: error: for each function it appears in.)
+../main.c:145: warning: implicit declaration of function 'SEG_Display'
+make: *** [main.o] Error 1
+11:41:51 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:12:
+../7SEGMENT.h:10:9: error: macro names must be identifiers
+../main.c:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'seg1'
+../main.c: In function 'main':
+../main.c:85: warning: implicit declaration of function 'SEG_Init'
+../main.c:85: error: 'seg1' undeclared (first use in this function)
+../main.c:85: error: (Each undeclared identifier is reported only once
+../main.c:85: error: for each function it appears in.)
+../main.c:145: warning: implicit declaration of function 'SEG_Display'
+make: *** [main.o] Error 1
+11:44:25 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+In file included from ../7SEGMENT.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT/7SEGMENT.h:10:9: error: macro names must be identifiers
+../7SEGMENT.c:26: error: expected ')' before 'seg'
+../7SEGMENT.c:31: error: expected ')' before 'seg'
+make: *** [7SEGMENT.o] Error 1
+11:45:34 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+In file included from ../7SEGMENT.c:10:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT/7SEGMENT.h:10:9: error: macro names must be identifiers
+../7SEGMENT.c:26: error: expected ')' before 'seg'
+../7SEGMENT.c:31: error: expected ')' before 'seg'
+make: *** [7SEGMENT.o] Error 1
+11:48:31 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+Finished building: ../7SEGMENT.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:49:30 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:10 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+Finished building: ../7SEGMENT.c
+ 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+Finished building: ../BUZZER.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:56 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:20:37 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+Finished building: ../7SEGMENT.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./LED.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:55 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:16 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6264 bytes (19.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
