@@ -10,11 +10,11 @@
 
 #include "../../MCAL/DIO/DIO_Interface.h"
 
-#define LCD_DATA_PORT		PORTB
-#define LCD_CONTROL_PORT	PORTA
+#define LCD_DATA_PORT		PORTC
+#define LCD_CONTROL_PORT	PORTD
 
 #define LCD_RS		DIO_PIN7
-#define LCD_RW		DIO_PIN1
-#define LCD_EN		DIO_PIN6
+#define LCD_RW		DIO_PIN6
+#define LCD_EN		DIO_PIN5
 
 #endif /* HAL_LCD_LCD_CONFIG_H_ */

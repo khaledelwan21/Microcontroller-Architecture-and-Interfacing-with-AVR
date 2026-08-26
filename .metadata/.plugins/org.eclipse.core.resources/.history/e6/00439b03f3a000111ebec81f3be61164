@@ -1,0 +1,26 @@
+
+/****************************************************************/
+/******* Author    : Khaled Ahmed Elwan         *****************/
+/******* Date      : 23 Aug 2026                *****************/
+/******* Version   : 1.0                        *****************/
+/******* File Name : 7SEGMENT.c            *****************/
+/****************************************************************/
+
+
+#include "_7SEGMENT.h"
+#include "../../MCAL/DIO/DIO_interface.h"
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+void  SEG_Init( seg_type seg )
+{
+	DIO_SetPortDirection(seg.port, 0xFF) ;
+}
+
+void SEG_Display (seg_type seg, u8 value )
+{
+	if (seg.type ==COMMON_CATHOUDE)  DIO_SetPortValue(seg.port ,seven_seg[value] ) ;
+	else DIO_SetPortValue(seg.port ,~(seven_seg[value])) ;
+
+}
+

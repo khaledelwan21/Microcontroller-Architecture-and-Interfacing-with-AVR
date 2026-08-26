@@ -1,66 +1,51 @@
 /*
  *  file Name : LCD_Program.c
- *  Created on: ??þ/??þ/???? at ?:??:?? Õ
- *  Author    : Ziad_Elmeakwy
+ *   *  Author    : Khaled Ahmed Elwan
  *  Description : 
  */
 
 #define F_CPU 8000000UL
 #include <util/delay.h>
 
-#include "LCD_Interface.h"
-#include "LCD_Config.h"
-
-void LCD_Init			(void)
+#include "CLCD_interface.h"
+#include "CLCD_config.h"
+#include "DIO_interface.h"
+void LCD_Init(void)
 {
-	// 1- must wait more than 30 ms before any action (VDD rises to 4.5 v)
 	_delay_ms(50);
-	// All Pins as OutPut pins
-	DIO_enumSetPortDirection(LCD_DATA_PORT, DIO_PORT_OUTPUT);
-	DIO_enumSetPinDirection(LCD_CONTROL_PORT, LCD_RS, DIO_PIN_OUTPUT);
-	DIO_enumSetPinDirection(LCD_CONTROL_PORT, LCD_RW, DIO_PIN_OUTPUT);
-	DIO_enumSetPinDirection(LCD_CONTROL_PORT, LCD_EN, DIO_PIN_OUTPUT);
+	DIO_SetPortDirection(LCD_DATA_PORT, DIO_OUTPUT);
+	DIO_SetPinDirection(LCD_CONTROL_PORT, LCD_RS, DIO_OUTPUT);
+	DIO_SetPinDirection(LCD_CONTROL_PORT, LCD_RW, DIO_OUTPUT);
+	DIO_SetPinDirection(LCD_CONTROL_PORT, LCD_EN, DIO_OUTPUT);
 
-	/* Return cursor to the first position on the first line  */
-	LCD_Send_Command(lcd_Home);
+	LCD_Send_Command(EIGHT_BITS);
+	_delay_ms(5);
+
+	LCD_Send_Command(lcd_DisplayOn_CursorOff);
 	_delay_ms(1);
 
-	/*FUNCTION SET Command : 2 lines , 5*8 font size */
-	LCD_Send_Command(EIGHT_BITS); // 8 Bit Mode ==> 0x38
-	_delay_ms(1); // wait more than 39 Ms
-
-	/* DISPLAY & Cursor (ON / OFF) Control */
-	LCD_Send_Command( lcd_DisplayOn_CursorOff);
-	_delay_ms(1);
-
-	/* DISPLAY CLEAR */
 	LCD_Clear_Screen();
+	_delay_ms(2);
 
-	/* ENTRY MODE  SET*/
-	LCD_Send_Command( lcd_EntryMode);
+	LCD_Send_Command(lcd_EntryMode);
 	_delay_ms(1);
 }
 
-void LCD_Send_Data		(u8 data)
+void LCD_Send_Data(u8 data)
 {
-	// 1 - Send Data at data pins (D0 -D7)
-	DIO_enumSetPortValue(LCD_DATA_PORT , data);
-	// 2 - Select Register from RS pin
-	DIO_enumSetPinValue(LCD_CONTROL_PORT , LCD_RS , DIO_PIN_HIGH);
-	// 3 - Select read or write using R/W pin
-	DIO_enumSetPinValue(LCD_CONTROL_PORT , LCD_RW , DIO_PIN_LOW);
-	// 4 - Enable to EN pin by Falling edge
+	DIO_SetPortValue(LCD_DATA_PORT, data);
+	DIO_SetPinValue(LCD_CONTROL_PORT, LCD_RS, DIO_HIGH);
+	DIO_SetPinValue(LCD_CONTROL_PORT, LCD_RW, DIO_LOW);
 	LCD_Send_Falling_Edge();
 }
-
 void LCD_Send_Command	(u8 command)
 {
 	// 1 - Send Data at data pins (D0 -D7)
-		DIO_enumSetPortValue(LCD_DATA_PORT , command);
+		DIO_SetPortValue(LCD_DATA_PORT , command);
 		// 2 - Select Register from RS pin
-		DIO_enumSetPinValue(LCD_CONTROL_PORT , LCD_RS , DIO_PIN_LOW);
+		DIO_SetPinValue(LCD_CONTROL_PORT , LCD_RS , DIO_LOW);
 		// 3 - Select read or write using R/W pin
-		DIO_enumSetPinValue(LCD_CONTROL_PORT , LCD_RW , DIO_PIN_LOW);
+		DIO_SetPinValue(LCD_CONTROL_PORT , LCD_RW , DIO_LOW);
 		// 4 - Enable to EN pin by Falling edge
 		LCD_Send_Falling_Edge();
 }
@@ -108,9 +93,9 @@ void LCD_Clear_Screen	(void)
 
 void LCD_Send_Falling_Edge		(void )
 {
-	DIO_enumSetPinValue(LCD_CONTROL_PORT , LCD_EN , DIO_PIN_HIGH);
+	DIO_SetPinValue(LCD_CONTROL_PORT , LCD_EN , DIO_HIGH);
 	_delay_ms(1);
-	DIO_enumSetPinValue(LCD_CONTROL_PORT , LCD_EN , DIO_PIN_LOW);
+	DIO_SetPinValue(LCD_CONTROL_PORT , LCD_EN , DIO_LOW);
 	_delay_ms(1);
 }
 void LCD_Set_Position ( u8 Copy_u8Row , u8 Copy_u8Col ){

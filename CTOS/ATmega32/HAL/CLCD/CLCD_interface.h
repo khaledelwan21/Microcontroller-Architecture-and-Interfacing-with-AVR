@@ -1,7 +1,6 @@
 /*
  *  file Name : LCD_Interface.h
- *  Created on: ??þ/??þ/???? at ?:??:?? Õ
- *  Author    : Ziad_Elmeakwy
+ *  Author    : Khaled Elwan
  *  Description : 
  */
 

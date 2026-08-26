@@ -9,28 +9,16 @@
 #include "DIO_interface.h"
 #include "LED.h"
 #include "BUZZER.h"
-#include "7SEGMENT.h"
+#include "_7SEGMENT.h"
+#include "SWITCH.h"
 #include "STD_TYPES.h"
 #define F_CPU	8000000UL
 
-/*u8 button_status,var ;
-u8 button1_status,button2_status ;
-const u8 seven_seg[10] = {
-    0x3F, // 0 -> a,b,c,d,e,f
-    0x06, // 1 -> b,c
-    0x5B, // 2 -> a,b,d,e,g
-    0x4F, // 3 -> a,b,c,d,g
-    0x66, // 4 -> b,c,f,g
-    0x6D, // 5 -> a,c,d,f,g
-    0x7D, // 6 -> a,c,d,e,f,g
-    0x07, // 7 -> a,b,c
-    0x7F, // 8 -> a,b,c,d,e,f,g
-    0x6F  // 9 -> a,b,c,d,f,g
-};
- int i =0 ;
- static u8 button1_prev = 1, button2_prev = 1;
 
- led_type LED[8] = {
+u8 i =0 ;
+static u8 button1_prev = 1, button2_prev = 1;
+static u8 button1_status , button2_status;
+led_type LED[8] = {
      { .port = PORTA, .pin = DIO_PIN0 },
      { .port = PORTA, .pin = DIO_PIN1 },
      { .port = PORTA, .pin = DIO_PIN2 },
@@ -40,49 +28,28 @@ const u8 seven_seg[10] = {
      { .port = PORTA, .pin = DIO_PIN6 },
      { .port = PORTA, .pin = DIO_PIN7 }
  };
- buzzer_type buz1={
-	 .port = PORTD, .pin = DIO_PIN0
 
- } ;
-*/
- /*led_type SEG[8] = {
-     { .port = PORTC, .pin = DIO_PIN0 },
-     { .port = PORTC, .pin = DIO_PIN1 },
-     { .port = PORTC, .pin = DIO_PIN2 },
-     { .port = PORTC, .pin = DIO_PIN3 },
-     { .port = PORTA, .pin = DIO_PIN4 },
-     { .port = PORTA, .pin = DIO_PIN5 },
-     { .port = PORTA, .pin = DIO_PIN6 },
-     { .port = PORTA, .pin = DIO_PIN7 }
- };*/
- seg_type seg1={
-	 .port = PORTC,
-	 .type=COMMON_CATHOUDE } ;
-int main()
+sw_type sw1={
+		.port=PORTD ,
+		.pin=DIO_PIN7 ,
+		.type =PIN_INTERNAL_PULL_UP
+};
+sw_type sw2={
+		.port=PORTD ,
+		.pin=DIO_PIN6 ,
+		.type =PIN_INTERNAL_PULL_UP
+};
+
+
+u8 main()
 {
-/*	DIO_SetPortDirection(PORTA ,0xFF) ;
-	DIO_SetPortDirection(PORTC ,0xFF) ;
 
-	//DIO_SetPinDirection(PORTA,DIO_PIN7, DIO_OUTPUT) ;
-
-	DIO_SetPinDirection(PORTD,DIO_PIN7, DIO_INPUT) ;
-	DIO_SetPin_PullUp(PORTD,DIO_PIN7,PullUp) ;
-
-	DIO_SetPinDirection(PORTD,DIO_PIN6, DIO_INPUT) ;
-	DIO_SetPin_PullUp(PORTD,DIO_PIN6,PullUp) ;
-
-	DIO_SetPortValue(PORTC,seven_seg[0]) ;*/
+	for (u8 i = 0; i < 8; i++)
+	  {
+		 LED_Init(LED[i]);
+	  }
 
 
-	 /*  for (int i = 0; i < 8; i++)
-		    {
-		        LED_Init(LED[i]);
-		    }
-
-	   BUZZER_Init(buz1);*/
-
-
-	SEG_Init(seg1) ;
 	while(1)
 	{
 
@@ -119,32 +86,32 @@ int main()
 						_delay_ms(50) ;
 						BUZZER_ON(buz1) ;
 				}
-		for(int i=0 ;i<8;i++)
-					{
-							LED_OFF(LED[i]); ;
-							_delay_ms(50) ;
-							BUZZER_OFF(buz1) ;
+
 					}*/
-	/*	static u8 button1_prev = 1, button2_prev = 1;
 
-		DIO_GetPinValue(PORTD, DIO_PIN7, &button1_status);
-		DIO_GetPinValue(PORTD, DIO_PIN6, &button2_status);
-
-		if (button1_status == 0 && button1_prev == 1) {   // falling edge = press
-		    if (i == 0) i = 9; else i--;
-		    DIO_SetPortValue(PORTC, seven_seg[i]);
+		button1_status=SW_Getpressed(sw1) ;
+		button2_status=SW_Getpressed(sw2) ;
+		if (button1_status == 1 && button1_prev == 0)
+		{
+			for(int i=0 ;i<8;i++)
+		    {
+				LED_ON(LED[i]);
+				_delay_ms(50) ;
+		    }
 		}
-		if (button2_status == 0 && button2_prev == 1) {
-		    if (i == 9) i = 0; else i++;
-		    DIO_SetPortValue(PORTC, seven_seg[i]);
+		if (button2_status == 1 && button2_prev == 0)
+		{
+			for(int i=0 ;i<8;i++)
+			 {
+				LED_OFF(LED[i]);
+				_delay_ms(50) ;
+			 }
 		}
 		button1_prev = button1_status;
-		button2_prev = button2_status;*/
-		for(int i=0 ;i<10;i++)
-		{
-				SEG_Display(seg1,i);
-				_delay_ms(50) ;
-		}
+		button2_prev = button2_status;
+
+
+
 
 	}
 	return 0;

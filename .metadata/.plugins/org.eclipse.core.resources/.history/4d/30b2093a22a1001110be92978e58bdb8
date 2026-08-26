@@ -1,0 +1,42 @@
+/*
+ *  file Name : SWITCH.c
+ *  Author    : Khaled Ahmed Elwan
+ *  Description :
+ */
+#include "STD_TYPES"
+#include "STD_MATH"
+
+#include "DIO_interface.h"
+#include "SWITCH.h"
+
+
+
+void SW_Init(sw_type sw)
+{
+	DIO_SetPinDirection(sw.port, sw.pin ,DIO_OUTPUT) ;
+}
+
+u8 SW_Getpressed(sw_type sw)
+{
+	u8 _u8local= 0;
+	if (sw.type ==PIN_PULL_UP)
+	{
+		CLR_BIT(sw.port ,sw.pin) ;
+		_u8local=~DIO_GetPinValue(sw.port , sw.pin) ;
+		    return _u8local ;
+	}
+
+	else if (sw.type ==PIN_PULL_DOWN)
+	{
+		CLR_BIT(sw.port ,sw.pin) ;
+		_u8local=DIO_GetPinValue(sw.port , sw.pin)  ;
+			return _u8local ;
+	}
+	else if(sw.type == PIN_INTERNAL_PULL_UP)
+	{
+		SET_BIT(sw.port ,sw.pin) ;
+		_u8local=~DIO_GetPinValue(sw.port , sw.pin) ;
+			return _u8local ;
+	}
+	}
+}

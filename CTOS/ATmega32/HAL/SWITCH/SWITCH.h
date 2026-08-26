@@ -1,0 +1,25 @@
+/*
+ *  file Name : SWITCH.h
+ *  Author    : Khaled Ahmed Elwan
+ *  Description :
+ */
+#ifndef SWITCH_H_
+#define SWITCH_H_
+
+#include "STD_TYPES.h"
+
+#define PIN_PULL_UP             0
+#define PIN_PULL_DOWN 		    1
+#define PIN_INTERNAL_PULL_UP    2
+
+typedef struct
+{
+	u8 port ;
+	u8 pin ;
+	u8 type ;
+}sw_type;
+
+void SW_Init(sw_type sw) ;
+u8 SW_Getpressed(sw_type sw) ;
+
+#endif /* SWITCH_H_ */

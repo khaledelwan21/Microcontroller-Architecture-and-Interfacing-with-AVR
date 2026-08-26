@@ -1,0 +1,17 @@
+/*
+ *  file Name : SWITCH.c
+ *  Author    : Khaled Ahmed Elwan
+ *  Description :
+ */
+#include "STD_TYPES"
+#include "STD_MATH"
+
+#include "DIO_interface.h"
+#include "SWITCH.h"
+
+
+
+void SW_Init(sw_type sw)
+{
+	DIO_SetPinDirection(sw.port, sw.pin ,DIO_PIN_OUTPUT)
+}
