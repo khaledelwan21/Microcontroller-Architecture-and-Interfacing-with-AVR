@@ -1,0 +1,20 @@
+07:38:44 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3408 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+07:38:44 Build Finished (took 349ms)
+

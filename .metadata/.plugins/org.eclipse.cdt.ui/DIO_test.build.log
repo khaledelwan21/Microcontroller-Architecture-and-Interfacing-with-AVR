@@ -1,4 +1,4 @@
-09:56:51 **** Incremental Build of configuration Debug for project DIO_test ****
+07:29:38 **** Build of configuration Debug for project DIO_test ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega32 DIO_test.elf
@@ -16,5 +16,5 @@ Data:         45 bytes (2.2% Full)
 Finished building: sizedummy
  
 
-09:56:52 Build Finished (took 1s.104ms)
+07:29:39 Build Finished (took 429ms)
 

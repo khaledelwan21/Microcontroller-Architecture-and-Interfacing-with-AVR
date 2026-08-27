@@ -12,6 +12,19 @@
 
 
 
+#include "STD_TYPES.h"
+
+#define NOTPRESSED 0xFF
+
+static u8 KPD_u8Buttons [4][4] = {
+		{'7', '8', '9', '/'}, /* ROW 0 */
+		{'4', '5', '6', '*'}, /* ROW 1 */
+		{'1', '2', '3', '-'}, /* ROW 2 */
+		{'?', '0', '=', '+'}  /* ROW 3 */
+};
+
+void KPD_Init(void);
+u8 KPD_u8GetPressed(void);
 
 
 

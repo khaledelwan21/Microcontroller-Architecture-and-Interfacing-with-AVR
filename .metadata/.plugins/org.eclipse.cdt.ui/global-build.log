@@ -646,3 +646,1240 @@ Data:         45 bytes (2.2% Full)
 
 Finished building: sizedummy
  
+07:29:28 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+In file included from ../DC_MOTOR.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR/DC_MOTOR.h:16: error: expected specifier-qualifier-list before 'u8'
+../DC_MOTOR.c: In function 'DC_MOTOR_Init':
+../DC_MOTOR.c:14: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:14: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:15: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:15: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c:16: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:16: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:17: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:17: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_ON_CW':
+../DC_MOTOR.c:22: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:22: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:23: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:23: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_ON_CCW':
+../DC_MOTOR.c:28: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:28: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:29: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:29: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_OFF':
+../DC_MOTOR.c:34: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:34: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:35: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:35: error: 'motor_type' has no member named 'pin2'
+make: *** [DC_MOTOR.o] Error 1
+07:29:38 **** Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6956 bytes (21.2% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:33:40 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+In file included from ../DC_MOTOR.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR/DC_MOTOR.h:16: error: expected specifier-qualifier-list before 'u8'
+../DC_MOTOR.c: In function 'DC_MOTOR_Init':
+../DC_MOTOR.c:14: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:14: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:15: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:15: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c:16: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:16: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:17: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:17: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_ON_CW':
+../DC_MOTOR.c:22: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:22: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:23: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:23: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_ON_CCW':
+../DC_MOTOR.c:28: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:28: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:29: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:29: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_OFF':
+../DC_MOTOR.c:34: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:34: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:35: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:35: error: 'motor_type' has no member named 'pin2'
+make: *** [DC_MOTOR.o] Error 1
+07:33:53 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+In file included from ../DC_MOTOR.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR/DC_MOTOR.h:16: error: expected specifier-qualifier-list before 'u8'
+../DC_MOTOR.c: In function 'DC_MOTOR_Init':
+../DC_MOTOR.c:14: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:14: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:15: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:15: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c:16: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:16: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:17: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:17: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_ON_CW':
+../DC_MOTOR.c:22: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:22: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:23: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:23: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_ON_CCW':
+../DC_MOTOR.c:28: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:28: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:29: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:29: error: 'motor_type' has no member named 'pin2'
+../DC_MOTOR.c: In function 'DC_MOTOR_OFF':
+../DC_MOTOR.c:34: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:34: error: 'motor_type' has no member named 'pin1'
+../DC_MOTOR.c:35: error: 'motor_type' has no member named 'port'
+../DC_MOTOR.c:35: error: 'motor_type' has no member named 'pin2'
+make: *** [DC_MOTOR.o] Error 1
+07:35:24 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../SWITCH.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SWITCH.d" -MT"SWITCH.o" -c -o "SWITCH.o" "../SWITCH.c"
+Finished building: ../SWITCH.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3408 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:35:47 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3408 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:38:37 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3408 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:38:44 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3408 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+**** Build of configuration Debug for project KEYPAD_test ****
+
+Nothing to build for project KEYPAD_test
+09:12:51 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+09:17:05 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+CLCD_program.d:3: *** target pattern contains no `%'.  Stop.
+09:35:27 **** Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CLCD_program.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:12:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD/KEYPAD_interface.h:21:19: error: empty character constant
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+make: *** [KEYPAD_program.o] Error 1
+09:35:54 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:12:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD/KEYPAD_interface.h:21:19: error: empty character constant
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+make: *** [KEYPAD_program.o] Error 1
+09:37:05 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:10:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: KEYPAD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_test.map -mmcu=atmega32 -o "KEYPAD_test.elf"  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o   
+./main.o: In function `main':
+../main.c:19: multiple definition of `KPD_u8Buttons'
+./KEYPAD_program.o:../KEYPAD_program.c:20: first defined here
+make: *** [KEYPAD_test.elf] Error 1
+09:40:02 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:10:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD/KEYPAD_interface.h:19: warning: 'KPD_u8Buttons' defined but not used
+Finished building: ../main.c
+ 
+Building target: KEYPAD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_test.map -mmcu=atmega32 -o "KEYPAD_test.elf"  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o   
+Finished building target: KEYPAD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_test.elf  >"KEYPAD_test.lss"
+Finished building: KEYPAD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex KEYPAD_test.elf  "KEYPAD_test.hex"
+Finished building: KEYPAD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:42:47 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_program.c
+ 
+Building target: KEYPAD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_test.map -mmcu=atmega32 -o "KEYPAD_test.elf"  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o   
+Finished building target: KEYPAD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_test.elf  >"KEYPAD_test.lss"
+Finished building: KEYPAD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex KEYPAD_test.elf  "KEYPAD_test.hex"
+Finished building: KEYPAD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:51:22 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:51:29 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+CLCD_program.d:3: *** target pattern contains no `%'.  Stop.
+09:52:32 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:52:33 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+CLCD_program.d:3: *** target pattern contains no `%'.  Stop.
+09:53:07 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:53:12 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+CLCD_program.d:3: *** target pattern contains no `%'.  Stop.
+09:54:26 **** Clean-only build of configuration Debug for project KEYPAD_test ****
+make clean 
+rm -rf  KEYPAD_test.hex  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o  sizedummy  KEYPAD_test.lss  ./CLCD_program.d ./DIO_program.d ./KEYPAD_program.d ./main.d  KEYPAD_test.elf
+ 
+09:54:27 **** Clean-only build of configuration Debug for project LCD_test ****
+make clean 
+rm -rf  LCD_test.hex  ./CLCD_program.o ./DIO_program.o ./main.o  sizedummy  LCD_test.lss  ./CLCD_program.d ./DIO_program.d ./main.d  LCD_test.elf
+ 
+09:54:33 **** Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CLCD_program.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:10:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD/KEYPAD_interface.h:19: warning: 'KPD_u8Buttons' defined but not used
+Finished building: ../main.c
+ 
+Building target: KEYPAD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_test.map -mmcu=atmega32 -o "KEYPAD_test.elf"  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o   
+Finished building target: KEYPAD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_test.elf  >"KEYPAD_test.lss"
+Finished building: KEYPAD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex KEYPAD_test.elf  "KEYPAD_test.hex"
+Finished building: KEYPAD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:54:48 **** Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CLCD_program.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: LCD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_test.map -mmcu=atmega32 -o "LCD_test.elf"  ./CLCD_program.o ./DIO_program.o ./main.o   
+Finished building target: LCD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_test.elf  >"LCD_test.lss"
+Finished building: LCD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_test.elf  "LCD_test.hex"
+Finished building: LCD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18512 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:54:57 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:54:58 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18512 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:57:45 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:57:51 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18512 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:57:55 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:57:56 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18512 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:58:07 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:58:08 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18512 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:00:02 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:00:09 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18512 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:01:59 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:02:06 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../CLCD_program.c: In function 'LCD_Send_Falling_Edge':
+../CLCD_program.c:101: error: expected expression at end of input
+../CLCD_program.c:101: error: expected declaration or statement at end of input
+make: *** [CLCD_program.o] Error 1
+10:03:09 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:03:11 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CLCD_program.c
+ 
+Building target: LCD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_test.map -mmcu=atmega32 -o "LCD_test.elf"  ./CLCD_program.o ./DIO_program.o ./main.o   
+Finished building target: LCD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_test.elf  >"LCD_test.lss"
+Finished building: LCD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_test.elf  "LCD_test.hex"
+Finished building: LCD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:03:38 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:03:39 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:04:42 **** Clean-only build of configuration Debug for project KEYPAD_test ****
+make clean 
+rm -rf  KEYPAD_test.hex  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o  sizedummy  KEYPAD_test.lss  ./CLCD_program.d ./DIO_program.d ./KEYPAD_program.d ./main.d  KEYPAD_test.elf
+ 
+10:04:44 **** Clean-only build of configuration Debug for project LCD_test ****
+make clean 
+rm -rf  LCD_test.hex  ./CLCD_program.o ./DIO_program.o ./main.o  sizedummy  LCD_test.lss  ./CLCD_program.d ./DIO_program.d ./main.d  LCD_test.elf
+ 
+10:04:51 **** Build of configuration Debug for project KEYPAD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CLCD_program.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KEYPAD_program.d" -MT"KEYPAD_program.o" -c -o "KEYPAD_program.o" "../KEYPAD_program.c"
+In file included from ../KEYPAD_program.c:17:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:10:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD/KEYPAD_interface.h:19: warning: 'KPD_u8Buttons' defined but not used
+Finished building: ../main.c
+ 
+Building target: KEYPAD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_test.map -mmcu=atmega32 -o "KEYPAD_test.elf"  ./CLCD_program.o ./DIO_program.o ./KEYPAD_program.o ./main.o   
+Finished building target: KEYPAD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_test.elf  >"KEYPAD_test.lss"
+Finished building: KEYPAD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex KEYPAD_test.elf  "KEYPAD_test.hex"
+Finished building: KEYPAD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:05:06 **** Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CLCD_program.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: LCD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_test.map -mmcu=atmega32 -o "LCD_test.elf"  ./CLCD_program.o ./DIO_program.o ./main.o   
+Finished building target: LCD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_test.elf  >"LCD_test.lss"
+Finished building: LCD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_test.elf  "LCD_test.hex"
+Finished building: LCD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:08:01 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:08:08 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: LCD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_test.map -mmcu=atmega32 -o "LCD_test.elf"  ./CLCD_program.o ./DIO_program.o ./main.o   
+Finished building target: LCD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_test.elf  >"LCD_test.lss"
+Finished building: LCD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_test.elf  "LCD_test.hex"
+Finished building: LCD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   20016 bytes (61.1% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:08:29 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:08:30 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   20016 bytes (61.1% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:11:22 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:11:26 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:7:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: LCD_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_test.map -mmcu=atmega32 -o "LCD_test.elf"  ./CLCD_program.o ./DIO_program.o ./main.o   
+Finished building target: LCD_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_test.elf  >"LCD_test.lss"
+Finished building: LCD_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex LCD_test.elf  "LCD_test.hex"
+Finished building: LCD_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:13:05 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:13:06 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:16:09 **** Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:16:13 **** Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:16:24 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:16:25 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:27:26 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18856 bytes (57.5% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:27:31 **** Incremental Build of configuration Debug for project LCD_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   19998 bytes (61.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

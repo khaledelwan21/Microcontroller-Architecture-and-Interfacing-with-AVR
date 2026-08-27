@@ -14,3 +14,6 @@
 1787636907311	Delete resource 'CTOS/ATmega32/MCAL/HAL'
 1787651022669	Delete resource 'DIO_test/7SEGMENT.h'
 1787727588721	Delete resource 'LCD_test'
+1787808774006	Delete resource 'DC_MOTOR_test'
+1787814667858	Delete resource 'KEYPAD_test'
+1787815118816	Delete resource 'KEYPAD_test'
