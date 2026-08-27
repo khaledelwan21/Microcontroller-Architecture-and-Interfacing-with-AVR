@@ -1,6 +1,6 @@
 /*
  *  file Name : LCD_Program.c
- *   *  Author    : Khaled Ahmed Elwan
+ *  Author    : Khaled Ahmed Elwan
  *  Description : 
  */
 
