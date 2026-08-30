@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 27, 2026
+ *      Author: khaled
+ */
+
+#define F_CPU 8000000UL
+#include <util/delay.h>
+#include "STD_TYPES.h"
+#include "DIO_interface.h"
+#include "CLCD_interface.h"
+#include "KEYPAD_interface.h"
+int main(void)
+{
+    KPD_Init();
+    LCD_Init();
+
+    LCD_Send_Data('A'); // اختبار الشاشة فقط
+
+    while(1)
+    {
+        // ...
+    }
+}

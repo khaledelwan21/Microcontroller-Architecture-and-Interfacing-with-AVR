@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 27, 2026
+ *      Author: khaled
+ */
+
+
+#define F_CPU 8000000UL
+#include <util/delay.h>
+#include "DIO_interface.h"
+#include "CLCD_interface.h"
+#include "CLCD_config.h"
+#include "STD_TYPES.h"
+#include "KEYPAD_interface.h"
+
+
+int main()
+{
+
+	u8 KeyPressed;
+
+	KPD_Init();
+	LCD_Init();
+
+	while(1)
+	{
+	    KeyPressed = KPD_u8GetPressed();
+
+	    if(KeyPressed != NOTPRESSED)
+	    {
+	        LCD_Send_Data(KeyPressed);
+
+	        while(KPD_u8GetPressed() != NOTPRESSED);	// stuck here until release the switch
+	    }
+	}
+	return 0;
+}

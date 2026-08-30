@@ -67,7 +67,7 @@ void LCD_Send_String(u8 *string)
 	}
 }
 
-void LCD_Send_Number(u8 Number)
+void LCD_Send_Number(u32 Number)
 {
 	u64 LOC_u64Reversed = 1;
 
@@ -173,3 +173,22 @@ void LCD_Shift_String(u8 *Copy_u8String, u8 Copy_u8Row, u8 Copy_u8Direction, u8 
 		}
 	}
 }
+void LCD_Send_SignedNumber(s32 Copy_s32Number)
+{
+
+
+    if (Copy_s32Number == 0)
+    {
+        LCD_Send_Data('0');
+        return;
+    }
+
+    if (Copy_s32Number < 0)
+    {
+        LCD_Send_Data('-');
+        Copy_s32Number = -1*Copy_s32Number;
+    }
+    LCD_Send_Number(Copy_s32Number) ;
+
+}
+

@@ -56,7 +56,8 @@ void LCD_Init			(void);
 void LCD_Send_Data		(u8 data);
 void LCD_Send_Command	(u8 command);
 void LCD_Send_String	(u8 *string);
-void LCD_Send_Number	(u8 Number);
+void LCD_Send_Number	(u32 Number);
+void LCD_Send_SignedNumber(s32 Copy_s32Number) ;
 /*========== Shift Function Prototypes ==========*/
 void LCD_Shift_Display(u8 Copy_u8Direction, u8 Copy_u8Steps, u16 Copy_u16Delay_ms);
 void LCD_Shift_String(u8 *Copy_u8String, u8 Copy_u8Row, u8 Copy_u8Direction, u8 Copy_u8Steps, u16 Copy_u16Delay_ms);

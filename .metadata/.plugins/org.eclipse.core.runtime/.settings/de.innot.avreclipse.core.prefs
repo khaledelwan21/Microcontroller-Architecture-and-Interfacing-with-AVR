@@ -1,8 +1,3 @@
-avrdudepropertypage/previewexpanded=false
-avrdudepropertypage/weight_preview_collapsed=50
-avrdudepropertypage/weight_preview_expanded=20
-avrdudepropertypage/weight_top_collapsed=950
-avrdudepropertypage/weight_top_expanded=80
 avrpaths//systempath/AVRDUDE=
 avrpaths//systempath/AVRGCC=
 avrpaths//systempath/AVRINCLUDE=
@@ -12,4 +7,5 @@ avrpaths/AVRDUDE=D\:\\01- Embedded Systems AVR Tools-20260212T180018Z-1-001\\01-
 avrpaths/AVRGCC=D\:\\01- Embedded Systems AVR Tools-20260212T180018Z-1-001\\01- Embedded Systems AVR Tools\\01- IMT SDK\\IMT_SDK_Win_64\\WinAVR\\bin
 avrpaths/AVRINCLUDE=D\:\\01- Embedded Systems AVR Tools-20260212T180018Z-1-001\\01- Embedded Systems AVR Tools\\01- IMT SDK\\IMT_SDK_Win_64\\WinAVR\\avr\\include
 avrpaths/MAKE=D\:\\01- Embedded Systems AVR Tools-20260212T180018Z-1-001\\01- Embedded Systems AVR Tools\\01- IMT SDK\\IMT_SDK_Win_64\\WinAVR\\utils\\bin
+avrpaths/NoScanAtStartup=true
 eclipse.preferences.version=1

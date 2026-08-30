@@ -29,9 +29,10 @@
 							</tool>
 							<tool id="de.innot.avreclipse.tool.compiler.winavr.app.debug.1890825071" name="AVR Compiler" superClass="de.innot.avreclipse.tool.compiler.winavr.app.debug">
 								<option id="de.innot.avreclipse.compiler.option.debug.level.1347550017" name="Generate Debugging Info" superClass="de.innot.avreclipse.compiler.option.debug.level" useByScannerDiscovery="false"/>
-								<option id="de.innot.avreclipse.compiler.option.optimize.1332865618" name="Optimization Level" superClass="de.innot.avreclipse.compiler.option.optimize" useByScannerDiscovery="false"/>
+								<option id="de.innot.avreclipse.compiler.option.optimize.1332865618" name="Optimization Level" superClass="de.innot.avreclipse.compiler.option.optimize" useByScannerDiscovery="false" value="de.innot.avreclipse.compiler.optimize.size" valueType="enumerated"/>
 								<option id="de.innot.avreclipse.compiler.option.incpath.373693907" name="Include Paths (-I)" superClass="de.innot.avreclipse.compiler.option.incpath" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/DIO}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/HAL/KEYPAD}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/HAL/CLCD}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/LIB}&quot;"/>
 								</option>

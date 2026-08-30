@@ -1,20 +1,13 @@
-10:27:26 **** Incremental Build of configuration Debug for project KEYPAD_test ****
+05:50:04 **** Incremental Build of configuration Debug for project KEYPAD_test ****
 make all 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 KEYPAD_test.elf
-AVR Memory Usage
-----------------
-Device: atmega32
+Building file: ../CLCD_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\KEYPAD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_program.d" -MT"CLCD_program.o" -c -o "CLCD_program.o" "../CLCD_program.c"
+In file included from ../CLCD_program.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../CLCD_program.c:65: error: conflicting types for 'LCD_Send_Number'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\CLCD/CLCD_interface.h:59: error: previous declaration of 'LCD_Send_Number' was here
+make: *** [CLCD_program.o] Error 1
 
-Program:   18856 bytes (57.5% Full)
-(.text + .data + .bootloader)
-
-Data:        296 bytes (14.5% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
-
-10:27:27 Build Finished (took 1s.479ms)
+05:50:10 Build Finished (took 5s.922ms)
 

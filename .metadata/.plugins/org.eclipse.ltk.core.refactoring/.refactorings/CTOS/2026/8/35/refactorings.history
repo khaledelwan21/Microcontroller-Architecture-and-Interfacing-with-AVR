@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CTOS/ATmega32/HAL/7SEGMENT/7SEGMENT.c&apos; to &apos;_7SEGMENT.c&apos;" description="Rename resource &apos;7SEGMENT.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ATmega32/HAL/7SEGMENT/7SEGMENT.c" name="_7SEGMENT.c" stamp="1787709751511" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;CTOS/ATmega32/HAL/7SEGMENT/7SEGMENT.h&apos; to &apos;_7SEGMENT.h&apos;" description="Rename resource &apos;7SEGMENT.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ATmega32/HAL/7SEGMENT/7SEGMENT.h" name="_7SEGMENT.h" stamp="1787709761814" updateReferences="true"/>
+<session version="1.0">
+<refactoring comment="Move &apos;SWITCH&apos; to &apos;STEPPER_MOTOR&apos;" description="Move &apos;SWITCH&apos; to &apos;STEPPER_MOTOR&apos;" destination="ATmega32/HAL/STEPPER_MOTOR" element1="ATmega32/HAL/SWITCH" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1787916221377" updateReferences="true"/>
 </session>
