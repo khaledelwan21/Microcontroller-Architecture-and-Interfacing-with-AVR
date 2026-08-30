@@ -1,0 +1,23 @@
+
+/*
+ *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    GIE_program.c    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ *
+ *  Author : Khaled Ahmed Elwan
+ *  Layer  : MCAL
+ *  SWC    : EXTI
+ *
+ */
+
+#include "GIE_interface.h"
+#include "GIE_private.h"
+#include  "BIT_MATH.h"
+#include  "STD_TYPES.h"
+
+void GI_ENABLE(void)
+{
+	SET_BIT(SREG,7) ;
+}
+void GI_DISABLE(void)
+{
+	CLR_BIT(SREG,7);
+}

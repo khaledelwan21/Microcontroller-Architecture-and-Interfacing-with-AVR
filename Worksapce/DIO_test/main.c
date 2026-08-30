@@ -7,112 +7,60 @@
 
 #include <util/delay.h>
 #include "DIO_interface.h"
+#include "DIO_private.h"
 #include "LED.h"
 #include "BUZZER.h"
 #include "_7SEGMENT.h"
 #include "SWITCH.h"
+#include "EXTI_interface.h"
+#include "GIE_interface.h"
 #include "STD_TYPES.h"
+#include "BIT_MATH.h"
 #define F_CPU	8000000UL
 
 
-u8 i =0 ;
-static u8 button1_prev = 1, button2_prev = 1;
-static u8 button1_status , button2_status;
+void ToggleLed(void)
+{
+
+	TOG_BIT( DIO_PORTB, DIO_PIN6) ;
+}
+
 led_type LED[8] = {
-     { .port = PORTA, .pin = DIO_PIN0 },
-     { .port = PORTA, .pin = DIO_PIN1 },
-     { .port = PORTA, .pin = DIO_PIN2 },
-     { .port = PORTA, .pin = DIO_PIN3 },
-     { .port = PORTA, .pin = DIO_PIN4 },
-     { .port = PORTA, .pin = DIO_PIN5 },
-     { .port = PORTA, .pin = DIO_PIN6 },
-     { .port = PORTA, .pin = DIO_PIN7 }
+     { .port = PORTB, .pin = DIO_PIN0 },
+     { .port = PORTB, .pin = DIO_PIN1 },
+     { .port = PORTB, .pin = DIO_PIN2 },
+     { .port = PORTB, .pin = DIO_PIN3 },
+     { .port = PORTB, .pin = DIO_PIN4 },
+     { .port = PORTB, .pin = DIO_PIN5 },
+     { .port = PORTB, .pin = DIO_PIN6 },
+     { .port = PORTB, .pin = DIO_PIN7 }
  };
 
 sw_type sw1={
 		.port=PORTD ,
-		.pin=DIO_PIN7 ,
-		.type =PIN_INTERNAL_PULL_UP
-};
-sw_type sw2={
-		.port=PORTD ,
-		.pin=DIO_PIN6 ,
+		.pin=DIO_PIN2 ,
 		.type =PIN_INTERNAL_PULL_UP
 };
 
-
-u8 main()
+int main()
 {
+	SW_Init(sw1);
 
 	for (u8 i = 0; i < 8; i++)
 	  {
 		 LED_Init(LED[i]);
 	  }
-
-
+	EXTI_voidInit();
+	EXTI_voidSetCallBack(EXTI_LINE0 ,ToggleLed) ;
+	EXTI_voidEnableInterrupt   (EXTI_LINE0);
+	GI_ENABLE();
 	while(1)
 	{
-
-	/*	DIO_GetPinValue(PORTD,DIO_PIN7, &button_status) ;
-		if (var==0 && button_status ==0 )
-		{
-			DIO_SetPinValue(PORTA,DIO_PIN7,DIO_LOW) ;
-			var =1 ;
-			_delay_ms(20) ;
-		}
-		else if(var==1 && button_status ==0)
-		{
-			DIO_SetPinValue(PORTA,DIO_PIN7,DIO_HIGH) ;
-			var =0 ;
-			_delay_ms(20) ;
-		}*/
-
-
-	/*	for(int i=0 ;i<256;i=i*2+1)
-		{
-				DIO_SetPortValue(PORTA, i) ;
-				_delay_ms(50) ;
-		}
-		for (int i=255 ; i>0 ; i=i/2)
-		{
-			DIO_SetPortValue(PORTA, i) ;
-			_delay_ms(50) ;
-		}*/
-
-
-	/*	for(int i=0 ;i<8;i++)
-				{
-						LED_ON (LED[i]);
-						_delay_ms(50) ;
-						BUZZER_ON(buz1) ;
-				}
-
-					}*/
-
-		button1_status=SW_Getpressed(sw1) ;
-		button2_status=SW_Getpressed(sw2) ;
-		if (button1_status == 1 && button1_prev == 0)
-		{
-			for(int i=0 ;i<8;i++)
-		    {
-				LED_ON(LED[i]);
-				_delay_ms(50) ;
-		    }
-		}
-		if (button2_status == 1 && button2_prev == 0)
-		{
-			for(int i=0 ;i<8;i++)
-			 {
-				LED_OFF(LED[i]);
-				_delay_ms(50) ;
-			 }
-		}
-		button1_prev = button1_status;
-		button2_prev = button2_status;
-
-
-
+		TOG_BIT(DIO_PORTB,DIO_PIN7) ;
+		_delay_ms(50) ;
 
 	}
+
+
 	return 0;
 }

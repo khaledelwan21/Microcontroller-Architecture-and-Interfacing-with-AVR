@@ -1,0 +1,34 @@
+/*
+ *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    EXTI_config.h    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ *
+ *  Author : Khaled Ahmed Elwan
+ *  Layer  : MCAL
+ *  SWC    : EXTI
+ *
+ */
+#ifndef _EXTI_CONFIG_H_
+#define _EXTI_CONFIG_H_
+
+/*
+ * OPTIONS: ENABLE / DISABLE
+ */
+#define EXTI_INT0_STATUS	 DISABLE
+#define EXTI_INT1_STATUS	 ENABLE
+#define EXTI_INT2_STATUS	 DISABLE
+
+/*
+ * OPTIONS for INT0/INT1:
+ * 	EXTI_LOW_LEVEL
+ * 	EXTI_ON_CHANGE
+ * 	EXTI_FALLING_EDGE
+ * 	EXTI_RISING_EDGE
+ *
+ * OPTIONS for INT2 (Falling/Rising بس):
+ * 	EXTI_FALLING_EDGE
+ * 	EXTI_RISING_EDGE
+ */
+#define EXTI_SENSE0_MODE 	 EXTI_FALLING_EDGE
+#define EXTI_SENSE1_MODE 	 EXTI_FALLING_EDGE
+#define EXTI_SENSE2_MODE 	 EXTI_FALLING_EDGE
+
+#endif   /**end _EXTI_CONFIG_H_**/

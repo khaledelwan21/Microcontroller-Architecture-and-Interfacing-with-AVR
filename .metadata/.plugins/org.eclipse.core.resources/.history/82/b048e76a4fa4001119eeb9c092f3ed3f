@@ -1,0 +1,26 @@
+/*
+ *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    EXTI_config.h    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ *
+ *  Author : Khaled Ahmed Elwan
+ *  Layer  : MCAL
+ *  SWC    : EXTI
+ *
+ */
+#ifndef _EXTI_CONFIG_H_
+#define _EXTI_CONFIG_H_
+
+
+
+
+
+
+#define EXTI_INT0_STATUS	 ENABLE
+#define EXTI_INT0_STATUS 	 ENABLE
+#define EXTI_INT0_STATUS 	 ENABLE
+
+#define EXTI_SENSE0_MODE 	 EXTI_LOW_LEVEL
+#define EXTI_SENSE1_MODE 	 EXTI_LOW_LEVEL
+#define EXTI_SENSE2_MODE 	 EXTI_LOW_LEVEL
+
+
+#endif   /**end _EXTI_CONFIG_H_**/

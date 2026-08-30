@@ -9491,3 +9491,864 @@ d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems av
 ../main.c: In function 'main':
 ../main.c:24: error: expected ';' before 'while'
 make: *** [main.o] Error 1
+11:05:14 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+Finished building: ../7SEGMENT.c
+ 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+Finished building: ../BUZZER.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+In file included from ../EXTI_program.c:9:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:15: error: expected ',' or '}' before 'EXTI_ON_CHANGE'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:22: error: expected ',' or '}' before 'EXTI_INT1'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidDisableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidEnableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:36: error: expected ')' before 'Copy_u8Line'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: expected ')' before 'Copy_u8EXTILine'
+../EXTI_program.c:10:27: error: EXTI_private.h: No such file or directory
+../EXTI_program.c: In function 'EXTI_voidDisableInterrupt':
+../EXTI_program.c:90: error: 'OK' undeclared (first use in this function)
+../EXTI_program.c:90: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:90: error: for each function it appears in.)
+../EXTI_program.c:94: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c:98: error: 'NOK' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_voidEnableInterrupt':
+../EXTI_program.c:108: error: 'OK' undeclared (first use in this function)
+../EXTI_program.c:112: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c:116: error: 'NOK' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_voidClearFlag':
+../EXTI_program.c:125: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_u8GetFlag':
+../EXTI_program.c:131: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c:133: warning: control reaches end of non-void function
+../EXTI_program.c: At top level:
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:136: error: parameter name omitted
+../EXTI_program.c:138: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:140: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:07:17 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+In file included from ../EXTI_program.c:9:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:15: error: expected ',' or '}' before 'EXTI_ON_CHANGE'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:22: error: expected ',' or '}' before 'EXTI_INT1'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidDisableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidEnableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:36: error: expected ')' before 'Copy_u8Line'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: expected ')' before 'Copy_u8EXTILine'
+../EXTI_program.c:10:27: error: EXTI_private.h: No such file or directory
+../EXTI_program.c: In function 'EXTI_voidDisableInterrupt':
+../EXTI_program.c:94: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c:94: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:94: error: for each function it appears in.)
+../EXTI_program.c: In function 'EXTI_voidEnableInterrupt':
+../EXTI_program.c:112: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_voidClearFlag':
+../EXTI_program.c:125: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_u8GetFlag':
+../EXTI_program.c:131: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c:133: warning: control reaches end of non-void function
+../EXTI_program.c: At top level:
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:136: error: parameter name omitted
+../EXTI_program.c:138: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:140: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:09:28 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+In file included from ../EXTI_program.c:9:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:15: error: expected ',' or '}' before 'EXTI_ON_CHANGE'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:22: error: expected ',' or '}' before 'EXTI_INT1'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidDisableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidEnableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:36: error: expected ')' before 'Copy_u8Line'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: expected ')' before 'Copy_u8EXTILine'
+../EXTI_program.c:10:27: error: EXTI_private.h: No such file or directory
+../EXTI_program.c: In function 'EXTI_voidDisableInterrupt':
+../EXTI_program.c:94: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c:94: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:94: error: for each function it appears in.)
+../EXTI_program.c: In function 'EXTI_voidEnableInterrupt':
+../EXTI_program.c:112: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_voidClearFlag':
+../EXTI_program.c:125: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_u8GetFlag':
+../EXTI_program.c:131: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c:133: warning: control reaches end of non-void function
+../EXTI_program.c: At top level:
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:136: error: parameter name omitted
+../EXTI_program.c:138: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:140: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:11:01 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+In file included from ../EXTI_program.c:9:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:15: error: expected ',' or '}' before 'EXTI_ON_CHANGE'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:22: error: expected ',' or '}' before 'EXTI_INT1'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidDisableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'EXTI_voidEnableInterrupt'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:36: error: expected ')' before 'Copy_u8Line'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: expected ')' before 'Copy_u8EXTILine'
+../EXTI_program.c:10:27: error: EXTI_private.h: No such file or directory
+../EXTI_program.c: In function 'EXTI_voidDisableInterrupt':
+../EXTI_program.c:94: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c:94: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:94: error: for each function it appears in.)
+../EXTI_program.c: In function 'EXTI_voidEnableInterrupt':
+../EXTI_program.c:112: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_voidClearFlag':
+../EXTI_program.c:125: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_u8GetFlag':
+../EXTI_program.c:131: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c:133: warning: control reaches end of non-void function
+../EXTI_program.c: At top level:
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:136: error: parameter name omitted
+../EXTI_program.c:138: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:140: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:12:42 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+In file included from ../EXTI_program.c:9:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:15: error: expected ',' or '}' before 'EXTI_ON_CHANGE'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:22: error: expected ',' or '}' before 'EXTI_INT1'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: expected declaration specifiers or '...' before '*' token
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: 'EXTI_voidSetCallBack' declared as function returning a function
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h: In function 'EXTI_voidSetCallBack':
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: expected declaration specifiers before ')' token
+../EXTI_program.c:10:27: error: EXTI_private.h: No such file or directory
+../EXTI_program.c:15: error: storage class specified for parameter 'EXTI_CallBack'
+../EXTI_program.c:15: error: parameter 'EXTI_CallBack' is initialized
+../EXTI_program.c:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:88: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:106: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:123: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:129: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c:136: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:149: warning: 'signal' attribute only applies to functions
+../EXTI_program.c:151: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:162: warning: 'signal' attribute only applies to functions
+../EXTI_program.c:164: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:175: warning: 'signal' attribute only applies to functions
+../EXTI_program.c:177: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../EXTI_program.c:190: error: old-style parameter declarations in prototyped function definition
+../EXTI_program.c:186: error: expected '{' at end of input
+make: *** [EXTI_program.o] Error 1
+11:16:12 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+../EXTI_program.c:10:27: error: EXTI_private.h: No such file or directory
+../EXTI_program.c: In function 'EXTI_voidDisableInterrupt':
+../EXTI_program.c:94: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c:94: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:94: error: for each function it appears in.)
+../EXTI_program.c: In function 'EXTI_voidEnableInterrupt':
+../EXTI_program.c:112: error: 'GICR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_voidClearFlag':
+../EXTI_program.c:125: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c: In function 'EXTI_u8GetFlag':
+../EXTI_program.c:131: error: 'GIFR_REG' undeclared (first use in this function)
+../EXTI_program.c:133: warning: control reaches end of non-void function
+../EXTI_program.c: At top level:
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c:136: error: conflicting types for 'EXTI_voidSetCallBack'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: previous declaration of 'EXTI_voidSetCallBack' was here
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:136: error: parameter name omitted
+../EXTI_program.c:138: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:140: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:16:38 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+../EXTI_program.c:136: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:136: error: 'type name' declared as function returning a function
+../EXTI_program.c:136: error: conflicting types for 'EXTI_voidSetCallBack'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: previous declaration of 'EXTI_voidSetCallBack' was here
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:136: error: parameter name omitted
+../EXTI_program.c:138: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:138: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:138: error: for each function it appears in.)
+../EXTI_program.c:140: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:17:33 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+Finished building: ../EXTI_program.c
+ 
+Building file: ../GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GIE_program.d" -MT"GIE_program.o" -c -o "GIE_program.o" "../GIE_program.c"
+../GIE_program.c:11:25: error: GIE_interface: No such file or directory
+../GIE_program.c: In function 'GI_ENABLE':
+../GIE_program.c:17: error: 'SREG' undeclared (first use in this function)
+../GIE_program.c:17: error: (Each undeclared identifier is reported only once
+../GIE_program.c:17: error: for each function it appears in.)
+../GIE_program.c: In function 'GI_Disable':
+../GIE_program.c:21: error: 'SREG' undeclared (first use in this function)
+make: *** [GIE_program.o] Error 1
+11:21:10 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GIE_program.d" -MT"GIE_program.o" -c -o "GIE_program.o" "../GIE_program.c"
+../GIE_program.c: In function 'GI_ENABLE':
+../GIE_program.c:18: error: expected ')' before 'u8'
+../GIE_program.c:18: warning: type defaults to 'int' in declaration of 'type name'
+../GIE_program.c: In function 'GI_Disable':
+../GIE_program.c:22: error: expected ')' before 'u8'
+../GIE_program.c:22: warning: type defaults to 'int' in declaration of 'type name'
+make: *** [GIE_program.o] Error 1
+11:22:02 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GIE_program.d" -MT"GIE_program.o" -c -o "GIE_program.o" "../GIE_program.c"
+../GIE_program.c: In function 'GI_ENABLE':
+../GIE_program.c:18: error: expected ')' before 'u8'
+../GIE_program.c:18: warning: type defaults to 'int' in declaration of 'type name'
+../GIE_program.c: In function 'GI_Disable':
+../GIE_program.c:22: error: expected ')' before 'u8'
+../GIE_program.c:22: warning: type defaults to 'int' in declaration of 'type name'
+make: *** [GIE_program.o] Error 1
+11:23:43 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GIE_program.d" -MT"GIE_program.o" -c -o "GIE_program.o" "../GIE_program.c"
+../GIE_program.c: In function 'GI_ENABLE':
+../GIE_program.c:18: error: expected ')' before 'u8'
+../GIE_program.c:18: warning: type defaults to 'int' in declaration of 'type name'
+../GIE_program.c: In function 'GI_DISABLE':
+../GIE_program.c:22: error: expected ')' before 'u8'
+../GIE_program.c:22: warning: type defaults to 'int' in declaration of 'type name'
+make: *** [GIE_program.o] Error 1
+11:25:57 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GIE_program.d" -MT"GIE_program.o" -c -o "GIE_program.o" "../GIE_program.c"
+Finished building: ../GIE_program.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+Finished building: ../LED.c
+ 
+Building file: ../SWITCH.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SWITCH.d" -MT"SWITCH.o" -c -o "SWITCH.o" "../SWITCH.c"
+Finished building: ../SWITCH.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'ToggleLed':
+../main.c:22: error: lvalue required as left operand of assignment
+../main.c: At top level:
+../main.c:42: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:51: warning: implicit declaration of function 'GI_Enble'
+../main.c:54: error: lvalue required as left operand of assignment
+make: *** [main.o] Error 1
+11:26:56 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'ToggleLed':
+../main.c:22: error: lvalue required as left operand of assignment
+../main.c: At top level:
+../main.c:42: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:51: warning: implicit declaration of function 'GI_Enble'
+../main.c:54: error: lvalue required as left operand of assignment
+make: *** [main.o] Error 1
+11:27:19 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'ToggleLed':
+../main.c:23: error: lvalue required as left operand of assignment
+../main.c: At top level:
+../main.c:43: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:52: warning: implicit declaration of function 'GI_Enble'
+../main.c:55: error: lvalue required as left operand of assignment
+make: *** [main.o] Error 1
+11:27:59 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'ToggleLed':
+../main.c:23: error: lvalue required as left operand of assignment
+../main.c: At top level:
+../main.c:43: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:55: error: lvalue required as left operand of assignment
+make: *** [main.o] Error 1
+11:28:29 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'ToggleLed':
+../main.c:23: error: lvalue required as left operand of assignment
+../main.c: At top level:
+../main.c:43: warning: return type of 'main' is not 'int'
+../main.c: In function 'main':
+../main.c:55: error: lvalue required as left operand of assignment
+make: *** [main.o] Error 1
+11:30:12 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'ToggleLed':
+../main.c:23: error: 'DIO_PORTB' undeclared (first use in this function)
+../main.c:23: error: (Each undeclared identifier is reported only once
+../main.c:23: error: for each function it appears in.)
+../main.c: In function 'main':
+../main.c:55: error: 'DIO_PORTB' undeclared (first use in this function)
+../main.c:55: error: 'DIO_PIbN7' undeclared (first use in this function)
+make: *** [main.o] Error 1
+11:30:49 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4226 bytes (12.9% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:34:56 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7328 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:40:16 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7328 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:41:57 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7328 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:42:20 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7328 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:45:32 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:52: warning: statement with no effect
+../main.c:52: error: expected ';' before 'EXTI_voidSetCallBack'
+make: *** [main.o] Error 1
+11:46:24 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7332 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:47:56 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7332 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:48:08 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7332 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:10 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+../EXTI_program.c:42:3: error: #elif without #if
+../EXTI_program.c:62:3: error: #elif without #if
+../EXTI_program.c:74:3: error: #else without #if
+../EXTI_program.c:75:5: error: #error "Wrong INT0_SENSE configuration option"
+../EXTI_program.c:77:3: error: #endif without #if
+../EXTI_program.c:79:2: error: #endif without #if
+../EXTI_program.c:131: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:131: error: 'type name' declared as function returning a function
+../EXTI_program.c:131: error: conflicting types for 'EXTI_voidSetCallBack'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: previous declaration of 'EXTI_voidSetCallBack' was here
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:131: error: parameter name omitted
+../EXTI_program.c:133: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:133: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:133: error: for each function it appears in.)
+../EXTI_program.c:135: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:53:12 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+../EXTI_program.c:127: error: expected declaration specifiers or '...' before '*' token
+../EXTI_program.c:127: error: 'type name' declared as function returning a function
+../EXTI_program.c:127: error: conflicting types for 'EXTI_voidSetCallBack'
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI/EXTI_interface.h:37: error: previous declaration of 'EXTI_voidSetCallBack' was here
+../EXTI_program.c: In function 'EXTI_voidSetCallBack':
+../EXTI_program.c:127: error: parameter name omitted
+../EXTI_program.c:129: error: 'Copy_pvoidCallBack' undeclared (first use in this function)
+../EXTI_program.c:129: error: (Each undeclared identifier is reported only once
+../EXTI_program.c:129: error: for each function it appears in.)
+../EXTI_program.c:131: error: 'Copy_u8EXTILine' undeclared (first use in this function)
+make: *** [EXTI_program.o] Error 1
+11:53:48 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+Finished building: ../EXTI_program.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7402 bytes (22.6% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:54:03 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7402 bytes (22.6% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:56:50 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7418 bytes (22.6% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:57:12 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7418 bytes (22.6% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:05:30 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+Finished building: ../EXTI_program.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7458 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:05:59 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7458 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:23:52 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+Finished building: ../EXTI_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7458 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:26:11 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7458 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

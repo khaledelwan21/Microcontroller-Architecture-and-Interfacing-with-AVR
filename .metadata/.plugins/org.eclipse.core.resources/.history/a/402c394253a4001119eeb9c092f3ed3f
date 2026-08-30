@@ -1,0 +1,45 @@
+/*
+ *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<    EXTI_interface.h    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ *
+ *  Author : Khaled Ahmed Elwan
+ *  Layer  : MCAL
+ *  SWC    : EXTI
+ *
+ */
+#ifndef _EXTI_INTERFACE_H_
+#define _EXTI_INTERFACE_H_
+#include "STD_TYPES.h"
+#define EXTI_LINES_Count 3
+typedef enum {
+	EXTI_LOW_LEVEL
+	EXTI_ON_CHANGE
+	EXTI_FALLING_EDGE
+	EXTI_RISING_EDGE
+}EXTI_SenceControl;
+
+typedef enum {
+	EXTI_INT0
+	EXTI_INT1
+	EXTI_INT2
+}EXTI_INT;
+
+#define EXTI_LINE0   6
+#define EXTI_LINE1   7
+#define EXTI_LINE2   5
+
+typedef void (*EXTI_CallbackFunc_t )(void) ;
+
+void EXTI_voidInit              ( void);
+
+u8   EXTI_voidDisableInterrupt  ( u8 Copy_u8Line);
+u8   EXTI_voidEnableInterrupt   ( u8 Copy_u8Line);
+void EXTI_voidClearFlag         ( u8 Copy_u8Line);
+void EXTI_voidSetCallBack       ( u8 Copy_u8EXTILine , *Copy_pvoidCallBack)(void) );
+
+
+
+
+
+
+#endif   /**end _EXTI_INTERFACE_H_**/
+
