@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ui.externaltools.ProgramLaunchConfigurationType">
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="D:\01- Embedded Systems AVR Tools-20260212T180018Z-1-001\01- Embedded Systems AVR Tools\01- IMT SDK\IMT_SDK_Win_64\WinAVR\bin\avrdude.exe"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-c usbasp -p m32 -U flash:w:&quot;${workspace_loc:/${project_name}/Debug/${project_name}.hex}&quot;:i"/>
+</launchConfiguration>

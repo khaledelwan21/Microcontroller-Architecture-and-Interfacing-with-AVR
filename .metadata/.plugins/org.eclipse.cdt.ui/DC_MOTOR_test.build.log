@@ -1,4 +1,4 @@
-05:49:58 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+11:25:11 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
@@ -16,5 +16,5 @@ Data:         12 bytes (0.6% Full)
 Finished building: sizedummy
  
 
-05:50:01 Build Finished (took 2s.279ms)
+11:25:12 Build Finished (took 299ms)
 
