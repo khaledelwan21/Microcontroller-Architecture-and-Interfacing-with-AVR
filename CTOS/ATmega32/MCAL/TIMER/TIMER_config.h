@@ -34,12 +34,12 @@
 	 * - TIMER_T0_EXTERNAL_CLOCK_SOURCE_FALLING
 	 * - TIMER_T0_EXTERNAL_CLOCK_SOURCE_RISING
 	 */
-	#define TIMER0_PRESCALER		TIMER_DIVISION_FACTOR_8
+	#define TIMER0_PRESCALER		TIMER_NO_PRESCALER_FACTOR
 
 	#if TIMER0_WAVEFORM_GENERATION_MODE == TIMER_NORMAL_MODE
 
 		/*Set the Required Preload on TIMER0 Normal Mode*/
-		#define TIMER0_PRELOAD_VAL					192
+		#define TIMER0_PRELOAD_VAL					0
 
 		/*Set Timer0 Overflow Interrupt
 		 * Choose between
@@ -137,19 +137,19 @@
 	 * - TIMER_T0_EXTERNAL_CLOCK_SOURCE_FALLING
 	 * - TIMER_T0_EXTERNAL_CLOCK_SOURCE_RISING
 	 */
-	#define TIMER1_PRESCALER					TIMER_DIVISION_FACTOR_8
+	#define TIMER1_PRESCALER					TIMER_NO_PRESCALER_FACTOR
 
 	/*Set Preload Value for Normal Mode*/
 	#define TIMER1_PRELOAD_VAL					0
 
 	/*Set CTCA Value*/
-	#define TIMER1_CTCA_VAL						500
+	#define TIMER1_CTCA_VAL						4000
 
 	/*Set CTCB Value*/
 	#define TIMER1_CTCB_VAL						0
 
 	/*Set Input Capture Value*/
-	#define TIMER1_ICR1_VAL						20000
+	#define TIMER1_ICR1_VAL						7999
 
 	/*Set Compare Match Output for OCR1A
 	 * Choose between
@@ -179,7 +179,7 @@
 	 * 1. DISABLE
 	 * 2. ENABLE
 	 */
-	#define TIMER1_ICR_NOISE_CANCELER			DISABLE
+	#define TIMER1_ICR_NOISE_CANCELER			ENABLE
 
 	/*Set Timer1 Input Capture Edge
 	 * Choose between
@@ -214,7 +214,7 @@
 	 * 1. DISABLE
 	 * 2. ENABLE
 	 */
-	#define TIMER1_ICR_INTERRUPT			DISABLE
+	#define TIMER1_ICR_INTERRUPT			ENABLE
 
 /***********************************************************************************************/
 /***********************************************************************************************/

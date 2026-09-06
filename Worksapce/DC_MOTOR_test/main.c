@@ -1,55 +1,63 @@
 /*
  * main.c
- *
- *  Created on: Aug 27, 2026
- *      Author: khaled
+ * Motor Speed & Direction Control via Potentiometer (ADC)
  */
-
-
 #include <util/delay.h>
+#include <avr/interrupt.h>
 #include "DIO_interface.h"
-#include "DC_MOTOR.h"
-#include "SWITCH.h"
+#include "ADC_interface.h"
+#include "CLCD_interface.h"
+#include "TIMER_interface.h"
 #include "STD_TYPES.h"
-#define F_CPU	8000000UL
+#include "BIT_MATH.h"
+
+#define F_CPU			8000000UL
+
+u8 edge=0 ;
+u16 rising_edge1,rising_edge2;
+u16 time_period=0 ;
+f32 frequency ;
+void getFrequency(void)
+{
+	if (edge == 0)
+	{
+		rising_edge1=TIMER_u16GetICR();
+		edge =1 ;
+	}
+	else
+	{
+		rising_edge2=TIMER_u16GetICR();
+		TIMER_voidICUDisableInterrupt() ;
+		edge=2 ;
+	}
+
+}
 
 
-u8 button1_status ,button2_status  ;
+/*----------------------------------------------------------------*/
 
-sw_type sw1 ={
-		.port =PORTD,
-		.pin=DIO_PIN7,
-		.type= PIN_INTERNAL_PULL_UP
-};
-sw_type sw2 ={
-		.port =PORTD,
-		.pin=DIO_PIN6,
-		.type= PIN_INTERNAL_PULL_UP
-};
-motor_type motor1={
-		.port =PORTB,
-		.pin1=DIO_PIN0,
-		.pin2=DIO_PIN1
-};
 int main()
 {
-	SW_Init(sw1);
-	SW_Init(sw2);
+	/*Direction Pins*/
+	DIO_SetPinDirection(PORTD , DIO_PIN6 , DIO_INPUT) ;
+
+	DIO_SetPinDirection(PORTD , DIO_PIN5 , DIO_OUTPUT) ;
+	LCD_Init() ;
+	LCD_Send_String((u8 *)"Frequency=");
+	TIMER1_voidInit() ;
+	TIMER_u8SetCallBack( getFrequency ,TIMER1_ICU_VECTOR_ID) ;
+
+
+	sei() ;
 
 	while(1)
 	{
-		    button1_status=SW_Getpressed(sw1) ;
-			button2_status=SW_Getpressed(sw2) ;
-			if (button1_status == 1 && button2_status == 0)
-			{
-				DC_MOTOR_ON_CW(motor1) ;
-			}
-			if (button2_status == 1 && button1_status == 0)
-			{
-				DC_MOTOR_ON_CCW(motor1) ;
-			}
-
-
+		if(edge ==2)
+		{
+			time_period=rising_edge2-rising_edge1;
+			frequency=1000000.0/time_period ;
+			LCD_Send_Number(frequency) ;
+		}
 	}
 
 	return 0 ;

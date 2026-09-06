@@ -1,60 +1,5 @@
-11:38:15 **** Incremental Build of configuration Debug for project ADC_test ****
+07:57:37 **** Incremental Build of configuration Debug for project ADC_test ****
 make all 
-Building file: ../ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-Finished building: ../ADC_program.c
- 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:7:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
-In file included from ../main.c:10:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:40:1: warning: "SFIOR" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:141:1: warning: this is the location of the previous definition
-Finished building: ../main.c
- 
-Building target: ADC_test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,ADC_test.map -mmcu=atmega32 -o "ADC_test.elf"  ./ADC_program.o ./DIO_program.o ./LED.o ./main.o   
-Finished building target: ADC_test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S ADC_test.elf  >"ADC_test.lss"
-Finished building: ADC_test.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_test.elf  "ADC_test.hex"
-Finished building: ADC_test.hex
- 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega32 ADC_test.elf
 AVR Memory Usage
@@ -71,5 +16,5 @@ Data:         36 bytes (1.8% Full)
 Finished building: sizedummy
  
 
-11:38:19 Build Finished (took 3s.437ms)
+07:57:37 Build Finished (took 446ms)
 

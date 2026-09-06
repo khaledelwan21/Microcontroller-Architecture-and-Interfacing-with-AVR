@@ -1465,15 +1465,18 @@ void ADC_voidInit(void)
      b48:	cf 93       	push	r28
      b4a:	cd b7       	in	r28, 0x3d	; 61
      b4c:	de b7       	in	r29, 0x3e	; 62
-	/*Select the voltage reference*/
 	#if ADC_VREF == AREF
 		CLR_BIT(ADMUX , ADMUX_REFS0) ;
+		CLR_BIT(ADMUX , ADMUX_REFS1) ;
+
+	#elif ADC_VREF == AVCC
+		SET_BIT(ADMUX , ADMUX_REFS0) ;
      b4e:	a7 e2       	ldi	r26, 0x27	; 39
      b50:	b0 e0       	ldi	r27, 0x00	; 0
      b52:	e7 e2       	ldi	r30, 0x27	; 39
      b54:	f0 e0       	ldi	r31, 0x00	; 0
      b56:	80 81       	ld	r24, Z
-     b58:	8f 7b       	andi	r24, 0xBF	; 191
+     b58:	80 64       	ori	r24, 0x40	; 64
      b5a:	8c 93       	st	X, r24
 		CLR_BIT(ADMUX , ADMUX_REFS1) ;
      b5c:	a7 e2       	ldi	r26, 0x27	; 39

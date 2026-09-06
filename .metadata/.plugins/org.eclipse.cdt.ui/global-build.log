@@ -1,400 +1,406 @@
-11:25:33 **** Clean-only build of configuration Debug for project DIO_test ****
-make clean 
-rm -rf  DIO_test.hex  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o  sizedummy  DIO_test.lss  ./7SEGMENT.d ./BUZZER.d ./DIO_program.d ./EXTI_program.d ./GIE_program.d ./LED.d ./SWITCH.d ./main.d  DIO_test.elf
+11:16:17 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
  
-11:25:45 **** Incremental Build of configuration Debug for project ADC_test ****
+11:21:22 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
+Building file: ../TIMER_program.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-../ADC_program.c:16:24: error: ADC_config.h: No such file or directory
-../ADC_program.c: In function 'ADC_voidInit':
-../ADC_program.c:78: error: 'ADC_PRESCALLER' undeclared (first use in this function)
-../ADC_program.c:78: error: (Each undeclared identifier is reported only once
-../ADC_program.c:78: error: for each function it appears in.)
-../ADC_program.c: In function 'ADC_u8SetTriggerSource':
-../ADC_program.c:160: error: 'ADTS_MASK' undeclared (first use in this function)
-../ADC_program.c:163: error: 'ADTS0' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8GetResultSync':
-../ADC_program.c:209: error: 'ADC_TIMEOUT' undeclared (first use in this function)
-../ADC_program.c:215: error: 'TIMEOUT_STATE' undeclared (first use in this function)
-../ADC_program.c:239: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:246: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartConversionAsynch':
-../ADC_program.c:284: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:289: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartChainAsynch':
-../ADC_program.c:332: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:338: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartFreeRunningAsynch':
-../ADC_program.c:369: error: 'ADTS_MASK' undeclared (first use in this function)
-../ADC_program.c:370: error: 'ADTS0' undeclared (first use in this function)
-../ADC_program.c:383: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:388: error: 'NULL_POINTER' undeclared (first use in this function)
-make: *** [ADC_program.o] Error 1
-11:27:26 **** Incremental Build of configuration Debug for project ADC_test ****
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:21:39 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-../ADC_program.c: In function 'ADC_u8SetTriggerSource':
-../ADC_program.c:160: error: 'ADTS_MASK' undeclared (first use in this function)
-../ADC_program.c:160: error: (Each undeclared identifier is reported only once
-../ADC_program.c:160: error: for each function it appears in.)
-../ADC_program.c:163: error: 'ADTS0' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8GetResultSync':
-../ADC_program.c:215: error: 'TIMEOUT_STATE' undeclared (first use in this function)
-../ADC_program.c:239: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:246: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartConversionAsynch':
-../ADC_program.c:284: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:289: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartChainAsynch':
-../ADC_program.c:332: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:338: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartFreeRunningAsynch':
-../ADC_program.c:369: error: 'ADTS_MASK' undeclared (first use in this function)
-../ADC_program.c:370: error: 'ADTS0' undeclared (first use in this function)
-../ADC_program.c:383: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:388: error: 'NULL_POINTER' undeclared (first use in this function)
-make: *** [ADC_program.o] Error 1
-11:27:54 **** Incremental Build of configuration Debug for project ADC_test ****
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:27:11 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
+Building file: ../main.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-../ADC_program.c: In function 'ADC_u8SetTriggerSource':
-../ADC_program.c:160: error: 'ADTS_MASK' undeclared (first use in this function)
-../ADC_program.c:160: error: (Each undeclared identifier is reported only once
-../ADC_program.c:160: error: for each function it appears in.)
-../ADC_program.c:163: error: 'ADTS0' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8GetResultSync':
-../ADC_program.c:215: error: 'TIMEOUT_STATE' undeclared (first use in this function)
-../ADC_program.c:239: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:246: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartConversionAsynch':
-../ADC_program.c:284: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:289: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartChainAsynch':
-../ADC_program.c:332: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:338: error: 'NULL_POINTER' undeclared (first use in this function)
-../ADC_program.c: In function 'ADC_u8StartFreeRunningAsynch':
-../ADC_program.c:369: error: 'ADTS_MASK' undeclared (first use in this function)
-../ADC_program.c:370: error: 'ADTS0' undeclared (first use in this function)
-../ADC_program.c:383: error: 'BUSY_STATE' undeclared (first use in this function)
-../ADC_program.c:388: error: 'NULL_POINTER' undeclared (first use in this function)
-make: *** [ADC_program.o] Error 1
-11:29:13 **** Incremental Build of configuration Debug for project ADC_test ****
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:27:20 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:28:43 **** Clean-only build of configuration Debug for project DIO_test ****
+make clean 
+rm -rf  DIO_test.hex  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./TIMER_program.o ./main.o  sizedummy  DIO_test.lss  ./7SEGMENT.d ./BUZZER.d ./DIO_program.d ./EXTI_program.d ./GIE_program.d ./LED.d ./SWITCH.d ./TIMER_program.d ./main.d  DIO_test.elf
+ 
+11:35:50 **** Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../7SEGMENT.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-Finished building: ../ADC_program.c
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"7SEGMENT.d" -MT"7SEGMENT.o" -c -o "7SEGMENT.o" "../7SEGMENT.c"
+Finished building: ../7SEGMENT.c
+ 
+Building file: ../BUZZER.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"BUZZER.d" -MT"BUZZER.o" -c -o "BUZZER.o" "../BUZZER.c"
+Finished building: ../BUZZER.c
  
 Building file: ../DIO_program.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
 Finished building: ../DIO_program.c
+ 
+Building file: ../EXTI_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXTI_program.d" -MT"EXTI_program.o" -c -o "EXTI_program.o" "../EXTI_program.c"
+Finished building: ../EXTI_program.c
+ 
+Building file: ../GIE_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GIE_program.d" -MT"GIE_program.o" -c -o "GIE_program.o" "../GIE_program.c"
+Finished building: ../GIE_program.c
  
 Building file: ../LED.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
 Finished building: ../LED.c
  
+Building file: ../SWITCH.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SWITCH.d" -MT"SWITCH.o" -c -o "SWITCH.o" "../SWITCH.c"
+Finished building: ../SWITCH.c
+ 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
 Building file: ../main.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
 In file included from ../main.c:8:
 d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../main.c
  
-Building target: ADC_test.elf
+Building target: DIO_test.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,ADC_test.map -mmcu=atmega32 -o "ADC_test.elf"  ./ADC_program.o ./DIO_program.o ./LED.o ./main.o   
-Finished building target: ADC_test.elf
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DIO_test.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S ADC_test.elf  >"ADC_test.lss"
-Finished building: ADC_test.lss
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_test.elf  "ADC_test.hex"
-Finished building: ADC_test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
  
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 ADC_test.elf
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    5134 bytes (15.7% Full)
+Program:    4694 bytes (14.3% Full)
 (.text + .data + .bootloader)
 
-Data:         28 bytes (1.4% Full)
+Data:         66 bytes (3.2% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-11:29:32 **** Incremental Build of configuration Debug for project ADC_test ****
+11:36:17 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-Finished building: ../ADC_program.c
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
  
+11:45:46 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DIO_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DIO_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:46:03 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:46:17 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:48:04 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:54:17 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
 Building file: ../main.c
 Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\EXTI" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\7SEGMENT" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\BUZZER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
 In file included from ../main.c:8:
 d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 Finished building: ../main.c
  
-Building target: ADC_test.elf
+Building target: DIO_test.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,ADC_test.map -mmcu=atmega32 -o "ADC_test.elf"  ./ADC_program.o ./DIO_program.o ./LED.o ./main.o   
-Finished building target: ADC_test.elf
+avr-gcc -Wl,-Map,DIO_test.map -mmcu=atmega32 -o "DIO_test.elf"  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DIO_test.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S ADC_test.elf  >"ADC_test.lss"
-Finished building: ADC_test.lss
+avr-objdump -h -S DIO_test.elf  >"DIO_test.lss"
+Finished building: DIO_test.lss
  
 Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_test.elf  "ADC_test.hex"
-Finished building: ADC_test.hex
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_test.elf  "DIO_test.hex"
+Finished building: DIO_test.hex
  
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 ADC_test.elf
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    5134 bytes (15.7% Full)
+Program:    4694 bytes (14.3% Full)
 (.text + .data + .bootloader)
 
-Data:         28 bytes (1.4% Full)
+Data:         66 bytes (3.2% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-11:32:09 **** Incremental Build of configuration Debug for project ADC_test ****
+11:56:13 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-Finished building: ../ADC_program.c
- 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:7:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
-In file included from ../main.c:10:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:40:1: warning: "SFIOR" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:141:1: warning: this is the location of the previous definition
-Finished building: ../main.c
- 
-Building target: ADC_test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,ADC_test.map -mmcu=atmega32 -o "ADC_test.elf"  ./ADC_program.o ./DIO_program.o ./LED.o ./main.o   
-Finished building target: ADC_test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S ADC_test.elf  >"ADC_test.lss"
-Finished building: ADC_test.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_test.elf  "ADC_test.hex"
-Finished building: ADC_test.hex
- 
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 ADC_test.elf
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    8232 bytes (25.1% Full)
+Program:    4694 bytes (14.3% Full)
 (.text + .data + .bootloader)
 
-Data:         36 bytes (1.8% Full)
+Data:         66 bytes (3.2% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-11:32:47 **** Incremental Build of configuration Debug for project ADC_test ****
+11:59:08 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-Finished building: ../ADC_program.c
- 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:7:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
-In file included from ../main.c:10:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:40:1: warning: "SFIOR" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:141:1: warning: this is the location of the previous definition
-Finished building: ../main.c
- 
-Building target: ADC_test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,ADC_test.map -mmcu=atmega32 -o "ADC_test.elf"  ./ADC_program.o ./DIO_program.o ./LED.o ./main.o   
-Finished building target: ADC_test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S ADC_test.elf  >"ADC_test.lss"
-Finished building: ADC_test.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_test.elf  "ADC_test.hex"
-Finished building: ADC_test.hex
- 
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 ADC_test.elf
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    8232 bytes (25.1% Full)
+Program:    4694 bytes (14.3% Full)
 (.text + .data + .bootloader)
 
-Data:         36 bytes (1.8% Full)
+Data:         66 bytes (3.2% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-11:32:56 **** Incremental Build of configuration Debug for project ADC_test ****
+12:00:44 **** Incremental Build of configuration Debug for project DIO_test ****
 make all 
-Building file: ../ADC_program.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
-Finished building: ../ADC_program.c
- 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:7:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
-In file included from ../main.c:10:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:40:1: warning: "SFIOR" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:141:1: warning: this is the location of the previous definition
-Finished building: ../main.c
- 
-Building target: ADC_test.elf
-Invoking: AVR C Linker
-avr-gcc -Wl,-Map,ADC_test.map -mmcu=atmega32 -o "ADC_test.elf"  ./ADC_program.o ./DIO_program.o ./LED.o ./main.o   
-Finished building target: ADC_test.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S ADC_test.elf  >"ADC_test.lss"
-Finished building: ADC_test.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ADC_test.elf  "ADC_test.hex"
-Finished building: ADC_test.hex
- 
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega32 ADC_test.elf
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:    8232 bytes (25.1% Full)
+Program:    4694 bytes (14.3% Full)
 (.text + .data + .bootloader)
 
-Data:         36 bytes (1.8% Full)
+Data:         66 bytes (3.2% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
-11:37:49 **** Incremental Build of configuration Debug for project ADC_test ****
+12:06:12 **** Build of configuration Debug for project ADC_test ****
 make all 
 Building file: ../ADC_program.c
 Invoking: AVR Compiler
@@ -466,49 +472,803 @@ Data:         36 bytes (1.8% Full)
 
 Finished building: sizedummy
  
-11:38:15 **** Incremental Build of configuration Debug for project ADC_test ****
+12:06:27 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:52:05 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../SWITCH.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SWITCH.d" -MT"SWITCH.o" -c -o "SWITCH.o" "../SWITCH.c"
+Finished building: ../SWITCH.c
+ 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'Motor_voidSetSpeed':
+../main.c:20: error: 'OCR1A' undeclared (first use in this function)
+../main.c:20: error: (Each undeclared identifier is reported only once
+../main.c:20: error: for each function it appears in.)
+../main.c: In function 'Motor_voidSetDirection':
+../main.c:28: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../main.c: In function 'main':
+../main.c:42: warning: implicit declaration of function 'DIO_voidSetPinDirection'
+../main.c:49: warning: implicit declaration of function 'Timer1_voidInit'
+make: *** [main.o] Error 1
+08:55:10 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'Motor_voidSetDirection':
+../main.c:28: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../main.c: In function 'main':
+../main.c:42: warning: implicit declaration of function 'DIO_voidSetPinDirection'
+../main.c:49: warning: implicit declaration of function 'Timer1_voidInit'
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+./main.o: In function `Motor_voidSetSpeed':
+../main.c:19: undefined reference to `DIO_voidSetPinValue'
+../main.c:21: undefined reference to `DIO_voidSetPinValue'
+../main.c:21: undefined reference to `DIO_voidSetPinValue'
+../main.c:21: undefined reference to `DIO_voidSetPinValue'
+../main.c:19: undefined reference to `DIO_voidSetPinDirection'
+../main.c:21: undefined reference to `DIO_voidSetPinDirection'
+../main.c:21: undefined reference to `DIO_voidSetPinDirection'
+../main.c:21: undefined reference to `Timer1_voidInit'
+make: *** [DC_MOTOR_test.elf] Error 1
+08:56:38 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'Motor_voidSetDirection':
+../main.c:33: warning: implicit declaration of function 'DIO_voidSetPinValue'
+../main.c: In function 'main':
+../main.c:49: warning: implicit declaration of function 'Timer1_voidInit'
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+./main.o: In function `Motor_voidSetSpeed':
+../main.c:21: undefined reference to `DIO_voidSetPinValue'
+../main.c:21: undefined reference to `DIO_voidSetPinValue'
+../main.c:21: undefined reference to `Timer1_voidInit'
+make: *** [DC_MOTOR_test.elf] Error 1
+08:57:18 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:02:11 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:02:32 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:10:04 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:10:24 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:13:44 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:14:11 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9286 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:24:55 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:29:39 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:30:19 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:45:10 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:45:55 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:47:56 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:48:04 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:48:51 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:50:17 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:50:25 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:52:23 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:52:46 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9282 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         40 bytes (2.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:41:29 **** Incremental Build of configuration Debug for project ADC_test ****
 make all 
 Building file: ../ADC_program.c
 Invoking: AVR Compiler
 avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
 Finished building: ../ADC_program.c
- 
-Building file: ../main.c
-Invoking: AVR Compiler
-avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\LED" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
-In file included from ../main.c:7:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
-In file included from ../main.c:9:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
-In file included from ../main.c:10:
-D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_private.h:40:1: warning: "SFIOR" redefined
-In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
-                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
-                 from ../main.c:8:
-d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:141:1: warning: this is the location of the previous definition
-Finished building: ../main.c
  
 Building target: ADC_test.elf
 Invoking: AVR C Linker
@@ -533,6 +1293,1218 @@ Program:    8202 bytes (25.0% Full)
 (.text + .data + .bootloader)
 
 Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:41:44 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../ADC_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ADC_program.d" -MT"ADC_program.o" -c -o "ADC_program.o" "../ADC_program.c"
+Finished building: ../ADC_program.c
+ 
+Building file: ../DC_MOTOR.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC_MOTOR.d" -MT"DC_MOTOR.o" -c -o "DC_MOTOR.o" "../DC_MOTOR.c"
+Finished building: ../DC_MOTOR.c
+ 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building file: ../SWITCH.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SWITCH.d" -MT"SWITCH.o" -c -o "SWITCH.o" "../SWITCH.c"
+Finished building: ../SWITCH.c
+ 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:42:00 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:42:01 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:43:59 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:44:01 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:29:57 **** Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:30:07 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+../main.c: In function 'ADC_ReadingReady':
+../main.c:60: warning: unused variable 'Local_u16Speed'
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7340 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:30:36 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:30:37 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7340 bytes (22.4% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:01 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:02 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:16 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:17 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:33 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:38:34 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:22 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:27 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:47 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:52:48 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:54:53 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:54:54 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7478 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:59:23 **** Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:59:30 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+../main.c: In function 'ADC_ReadingReady':
+../main.c:58: error: 'POT_DEAD_ZONE' undeclared (first use in this function)
+../main.c:58: error: (Each undeclared identifier is reported only once
+../main.c:58: error: for each function it appears in.)
+make: *** [main.o] Error 1
+12:00:01 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:00:02 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7490 bytes (22.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:00:16 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:00:17 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7490 bytes (22.9% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:36 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:37 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7530 bytes (23.0% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:44 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:44 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7530 bytes (23.0% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:49 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:49 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7530 bytes (23.0% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:53 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:01:54 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7530 bytes (23.0% Full)
+(.text + .data + .bootloader)
+
+Data:         44 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:56:22 **** Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:56:37 **** Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"TIMER_program.d" -MT"TIMER_program.o" -c -o "TIMER_program.o" "../TIMER_program.c"
+Finished building: ../TIMER_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+../main.c: In function 'getFrequency':
+../main.c:21: warning: assignment makes integer from pointer without a cast
+../main.c:26: warning: assignment makes integer from pointer without a cast
+../main.c: In function 'main':
+../main.c:44: error: expected expression before 'void'
+../main.c:54: error: too few arguments to function 'TIMER_u8SetCallBack'
+../main.c:54: error: expected ';' before '}' token
+make: *** [main.o] Error 1
+07:56:59 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:57:01 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:44: error: expected expression before 'void'
+../main.c:54: error: too few arguments to function 'TIMER_u8SetCallBack'
+../main.c:54: error: expected ';' before '}' token
+make: *** [main.o] Error 1
+07:57:24 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:57:25 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+../main.c: In function 'main':
+../main.c:44: error: expected expression before 'void'
+../main.c:54: error: too few arguments to function 'TIMER_u8SetCallBack'
+../main.c:54: error: expected ';' before '}' token
+make: *** [main.o] Error 1
+07:57:37 **** Incremental Build of configuration Debug for project ADC_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8202 bytes (25.0% Full)
+(.text + .data + .bootloader)
+
+Data:         36 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+07:57:37 **** Incremental Build of configuration Debug for project DC_MOTOR_test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\DC_MOTOR" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\ADC" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\GIE" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\TIMER" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO" -I"D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\HAL\SWITCH" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:5:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:19:1: warning: "PORTA" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:100:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:20:1: warning: "PORTB" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:95:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:21:1: warning: "PORTC" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:90:1: warning: this is the location of the previous definition
+In file included from ../main.c:7:
+D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\MCAL\DIO/DIO_interface.h:22:1: warning: "PORTD" redefined
+In file included from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/io.h:206,
+                 from d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/interrupt.h:38,
+                 from ../main.c:6:
+d:/01- embedded systems avr tools-20260212t180018z-1-001/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/iom32.h:85:1: warning: this is the location of the previous definition
+Finished building: ../main.c
+ 
+Building target: DC_MOTOR_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_MOTOR_test.map -mmcu=atmega32 -o "DC_MOTOR_test.elf"  ./ADC_program.o ./DC_MOTOR.o ./DIO_program.o ./SWITCH.o ./TIMER_program.o ./main.o   
+Finished building target: DC_MOTOR_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_MOTOR_test.elf  >"DC_MOTOR_test.lss"
+Finished building: DC_MOTOR_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_MOTOR_test.elf  "DC_MOTOR_test.hex"
+Finished building: DC_MOTOR_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_MOTOR_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7122 bytes (21.7% Full)
+(.text + .data + .bootloader)
+
+Data:         47 bytes (2.3% Full)
 (.data + .bss + .noinit)
 
 

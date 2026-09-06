@@ -36,7 +36,7 @@
 
  */
 
-#define ADC_VREF  AREF
+#define ADC_VREF  AVCC
 
 /*
   Options :

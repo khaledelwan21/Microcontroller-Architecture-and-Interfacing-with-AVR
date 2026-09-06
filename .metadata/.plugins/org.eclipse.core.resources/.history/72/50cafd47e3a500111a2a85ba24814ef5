@@ -1,0 +1,66 @@
+/*
+ * 		main.c
+ *
+ *  	Created on: Aug 23, 2026
+ *      Author: khaled
+ */
+
+#include <util/delay.h>
+#include "DIO_interface.h"
+#include "DIO_private.h"
+#include "LED.h"
+#include "BUZZER.h"
+#include "_7SEGMENT.h"
+#include "SWITCH.h"
+#include "EXTI_interface.h"
+#include "GIE_interface.h"
+#include "TIMER_interface.h"
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#define F_CPU	8000000UL
+
+u32 counter=0 ;
+void ToggleLed(void)
+{
+	counter++ ;
+	if(counter==10000)
+	{
+		TOG_BIT( DIO_PORTB, DIO_PIN6) ;
+		counter=0 ;
+	}
+
+}
+
+led_type LED[8] = {
+     { .port = PORTB, .pin = DIO_PIN0 },
+     { .port = PORTB, .pin = DIO_PIN1 },
+     { .port = PORTB, .pin = DIO_PIN2 },
+     { .port = PORTB, .pin = DIO_PIN3 },
+     { .port = PORTB, .pin = DIO_PIN4 },
+     { .port = PORTB, .pin = DIO_PIN5 },
+     { .port = PORTB, .pin = DIO_PIN6 },
+     { .port = PORTB, .pin = DIO_PIN7 }
+ };
+
+
+
+int main()
+{
+
+
+	for (u8 i = 0; i < 8; i++)
+	  {
+		 LED_Init(LED[i]);
+	  }
+	TIMER0_voidInit() ;
+	TIMER_u8SetCallBack( ToggleLed,TIMER0_OVF_VECTOR_ID) ;
+	GI_ENABLE();
+
+	while(1)
+	{
+
+	}
+
+
+	return 0;
+}

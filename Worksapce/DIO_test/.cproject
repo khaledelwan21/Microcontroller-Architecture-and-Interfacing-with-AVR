@@ -32,6 +32,7 @@
 								<option id="de.innot.avreclipse.compiler.option.optimize.1980502855" name="Optimization Level" superClass="de.innot.avreclipse.compiler.option.optimize" useByScannerDiscovery="false"/>
 								<option id="de.innot.avreclipse.compiler.option.incpath.600564162" name="Include Paths (-I)" superClass="de.innot.avreclipse.compiler.option.incpath" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;D:\Microcontroller-Architecture-and-Interfacing-with-AVR\CTOS\ATmega32\LIB&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/TIMER}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/GIE}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/EXTI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/HAL/SWITCH}&quot;"/>

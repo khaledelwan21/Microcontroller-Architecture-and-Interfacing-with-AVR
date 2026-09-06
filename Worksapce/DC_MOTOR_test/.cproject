@@ -17,7 +17,7 @@
 					<folderInfo id="de.innot.avreclipse.configuration.app.debug.159416715." name="/" resourcePath="">
 						<toolChain id="de.innot.avreclipse.toolchain.winavr.app.debug.1584346671" name="AVR-GCC Toolchain" superClass="de.innot.avreclipse.toolchain.winavr.app.debug">
 							<option id="de.innot.avreclipse.toolchain.options.toolchain.objcopy.flash.app.debug.1460722082" name="Generate HEX file for Flash memory" superClass="de.innot.avreclipse.toolchain.options.toolchain.objcopy.flash.app.debug" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-							<option id="de.innot.avreclipse.toolchain.options.toolchain.objcopy.eeprom.app.debug.1371465769" name="Generate HEX file for EEPROM" superClass="de.innot.avreclipse.toolchain.options.toolchain.objcopy.eeprom.app.debug" useByScannerDiscovery="false"/>
+							<option id="de.innot.avreclipse.toolchain.options.toolchain.objcopy.eeprom.app.debug.1371465769" name="Generate HEX file for EEPROM" superClass="de.innot.avreclipse.toolchain.options.toolchain.objcopy.eeprom.app.debug" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 							<option id="de.innot.avreclipse.toolchain.options.toolchain.objdump.app.debug.1867570283" name="Generate Extended Listing (Source + generated Assembler)" superClass="de.innot.avreclipse.toolchain.options.toolchain.objdump.app.debug" useByScannerDiscovery="false"/>
 							<option id="de.innot.avreclipse.toolchain.options.toolchain.size.app.debug.492081624" name="Print Size" superClass="de.innot.avreclipse.toolchain.options.toolchain.size.app.debug" useByScannerDiscovery="false"/>
 							<option id="de.innot.avreclipse.toolchain.options.toolchain.avrdude.app.debug.2025761486" name="AVRDude" superClass="de.innot.avreclipse.toolchain.options.toolchain.avrdude.app.debug" useByScannerDiscovery="false"/>
@@ -31,7 +31,11 @@
 								<option id="de.innot.avreclipse.compiler.option.debug.level.588215469" name="Generate Debugging Info" superClass="de.innot.avreclipse.compiler.option.debug.level" useByScannerDiscovery="false"/>
 								<option id="de.innot.avreclipse.compiler.option.optimize.1295010083" name="Optimization Level" superClass="de.innot.avreclipse.compiler.option.optimize" useByScannerDiscovery="false"/>
 								<option id="de.innot.avreclipse.compiler.option.incpath.432074997" name="Include Paths (-I)" superClass="de.innot.avreclipse.compiler.option.incpath" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/HAL/DC_MOTOR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/HAL/CLCD}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/ADC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/DIO}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/GIE}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/TIMER}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/LIB}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/MCAL/DIO}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CTOS/ATmega32/HAL/SWITCH}&quot;"/>

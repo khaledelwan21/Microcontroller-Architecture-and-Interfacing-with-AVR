@@ -1,0 +1,118 @@
+/*
+ * main.c
+ * Motor Speed & Direction Control via Potentiometer (ADC)
+ */
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "DIO_interface.h"
+#include "ADC_interface.h"
+#include "TIMER_interface.h"
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#define F_CPU			8000000UL
+
+/*لازم تتطابق مع TIMER1_ICR1_VAL في TIMER_config.h بالظبط*/
+#define MOTOR_MAX_SPEED		999
+
+/*نقطة المنتصف اللي الموتور بيكون فيها واقف*/
+#define POT_MID_POINT		512
+
+volatile u16 PotReading = 0 ;
+
+/*----------------------------------------------------------------*/
+
+void Motor_voidSetSpeed(u16 Copy_u16Speed)
+{
+	if (Copy_u16Speed > MOTOR_MAX_SPEED)
+	{
+		Copy_u16Speed = MOTOR_MAX_SPEED ;
+	}
+	TIMER1_voidSetCTCA(Copy_u16Speed) ;
+}
+
+void Motor_voidSetDirection(u8 Copy_u8Direction)
+{
+	if (Copy_u8Direction == 0)
+	{
+		DIO_SetPinValue(PORTC , DIO_PIN0 , DIO_HIGH) ;   /*N1*/
+		DIO_SetPinValue(PORTC , DIO_PIN1 , DIO_LOW)  ;   /*N2*/
+	}
+	else
+	{
+		DIO_SetPinValue(PORTC , DIO_PIN0 , DIO_LOW)  ;
+		DIO_SetPinValue(PORTC , DIO_PIN1 , DIO_HIGH) ;
+	}
+}
+
+void Motor_voidStop(void)
+{
+	DIO_SetPinValue(PORTD , DIO_PIN2 , DIO_LOW) ;
+	DIO_SetPinValue(PORTD , DIO_PIN3 , DIO_LOW) ;
+	Motor_voidSetSpeed(0) ;
+}
+
+/*----------------------------------------------------------------*/
+
+/*بتتنفذ تلقائيًا مع كل عينة جديدة من الـ ADC (Free Running)*/
+void ADC_ReadingReady(void)
+{
+	u16 Local_u16Speed ;
+
+	if (PotReading < POT_MID_POINT)
+	{
+		/*النص التحتاني: اتجاه 0، السرعة بتزيد كل ما نبعد عن المنتصف*/
+		Motor_voidSetDirection(0) ;
+
+		//Local_u16Speed = (u16)(((u32)(POT_MID_POINT - PotReading) * MOTOR_MAX_SPEED) / POT_MID_POINT) ;
+		//Motor_voidSetSpeed(Local_u16Speed) ;
+		Motor_voidSetSpeed(900) ;
+
+	}
+	else if (PotReading > POT_MID_POINT)
+	{
+		/*النص الفوقاني: اتجاه 1، السرعة بتزيد كل ما نبعد عن المنتصف*/
+		Motor_voidSetDirection(1) ;
+
+	//	Local_u16Speed = (u16)(((u32)(PotReading - POT_MID_POINT) * MOTOR_MAX_SPEED) / (1023 - POT_MID_POINT)) ;
+		//Motor_voidSetSpeed(Local_u16Speed) ;
+		Motor_voidSetSpeed(900) ;
+
+	}
+	else
+	{
+		/*بالظبط في المنتصف: الموتور واقف*/
+		Motor_voidStop() ;
+	}
+}
+
+/*----------------------------------------------------------------*/
+
+int main()
+{
+	/*Direction Pins*/
+	DIO_SetPinDirection(PORTC , DIO_PIN1 , DIO_OUTPUT) ;   /*N1*/
+	DIO_SetPinDirection(PORTC , DIO_PIN0 , DIO_OUTPUT) ;   /*N2*/
+
+	/*PWM Pin (OC1A) - Timer1 بيتحكم فيه هاردوير*/
+	DIO_SetPinDirection(PORTD , DIO_PIN5 , DIO_OUTPUT) ;
+
+	/*Potentiometer Input Pin*/
+	DIO_SetPinDirection(PORTA , DIO_PIN0 , DIO_INPUT) ;
+
+	/*Init الـ Timer والـ ADC*/
+	TIMER1_voidInit() ;
+	ADC_voidInit() ;
+
+	/*ابدأ قراءة مستمرة من القناة 0*/
+	ADC_u8StartFreeRunningAsynch(ADC_CHANNEL0, (u16*)&PotReading, ADC_ReadingReady) ;
+
+	sei() ;   /*مهم جدًا! زي ما اتفقنا قبل كده*/
+
+	while(1)
+	{
+		/*المعالج حر تمامًا، كل حاجة بتحصل في الـ Background*/
+	}
+
+	return 0 ;
+}

@@ -1,7 +1,20 @@
-11:25:33 **** Clean-only build of configuration Debug for project DIO_test ****
-make clean 
-rm -rf  DIO_test.hex  ./7SEGMENT.o ./BUZZER.o ./DIO_program.o ./EXTI_program.o ./GIE_program.o ./LED.o ./SWITCH.o ./main.o  sizedummy  DIO_test.lss  ./7SEGMENT.d ./BUZZER.d ./DIO_program.d ./EXTI_program.d ./GIE_program.d ./LED.d ./SWITCH.d ./main.d  DIO_test.elf
+12:06:27 **** Incremental Build of configuration Debug for project DIO_test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4694 bytes (14.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (3.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
  
 
-11:25:34 Build Finished (took 1s.117ms)
+12:06:28 Build Finished (took 362ms)
 

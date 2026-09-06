@@ -1,0 +1,50 @@
+/*
+ * main.c
+ * Motor Speed & Direction Control via Potentiometer (ADC)
+ */
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "DIO_interface.h"
+#include "ADC_interface.h"
+#include "TIMER_interface.h"
+#include
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#define F_CPU			8000000UL
+
+u8 edge=0 ;
+u16 rising_edge1,rising_edge2;
+void getFrequency(void)
+{
+	if (edge == 0)
+	{
+		rising_edge1=TIMER_u16GetICR-0 ;
+		edge =1 ;
+	}
+	else
+}
+
+
+/*----------------------------------------------------------------*/
+
+int main()
+{
+	/*Direction Pins*/
+	DIO_SetPinDirection(PORTD , DIO_PIN6 , DIO_INPUT) ;
+
+	DIO_SetPinDirection(PORTD , DIO_PIN5 , DIO_OUTPUT) ;
+
+	TIMER1_voidInit() ;
+
+	TIMER_u8SetCallBack(void ( getFrequency ,TIMER1_ICU_VECTOR_ID)
+
+
+	sei() ;
+
+	while(1)
+	{
+	}
+
+	return 0 ;
+}
