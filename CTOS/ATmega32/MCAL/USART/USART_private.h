@@ -79,6 +79,7 @@
 
 #define UBRRL_MAX								256
 
-
+#define IDLE									0
+#define BUSY									1
 
  #endif /* USART_PRIVATE_H_ */
