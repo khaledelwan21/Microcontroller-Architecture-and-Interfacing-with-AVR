@@ -27,7 +27,8 @@
 #define SPSR_WCOL			6
 #define SPSR_SPI2X			0
 
-
+#define IDLE				0
+#define BUSY				1
 
 
 #endif

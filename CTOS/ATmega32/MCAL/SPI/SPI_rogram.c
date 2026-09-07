@@ -17,11 +17,23 @@
 
 /**********************< Variable >**********************/
 
+/*Global variable to carry the Transmit Data*/
+static u8 * SPI_pu8TData = NULL ;
 
+/*Global variable to carry the Receive Data*/
+static u8 * SPI_pu8RData = NULL ;
 
+/*Global variable to carry the buffer size*/
+static u8 SPI_u8BufferSize;
 
+/*Global variable to indicate for the current Data index of the buffer*/
+static u8 SPI_u8Index;
 
+/*Global pointer to function to carry the notification function called by ISR*/
+static void (* SPI_pvNotificationFunc)(void)= NULL;
 
+/*Global flag for the SPI Busy State*/
+static u8 SPI_u8State= IDLE ;
 
 /************************< Functions >****************** */
 void SPI_VoidInit(void)
@@ -116,7 +128,7 @@ void SPI_VoidInit(void)
 
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------
 u8 SPI_u8Tranceive (u8 Copy_u8TData , u8 * Copy_u8RData)
 {
 	u8 Local_u8ErrorState = E_OK ;
@@ -147,5 +159,25 @@ u8 SPI_u8Tranceive (u8 Copy_u8TData , u8 * Copy_u8RData)
 		Local_u8ErrorState = BUSY_STATE ;
 	}
 
+	return Local_u8ErrorState ;
+}
+//-------------------------------------------------------------------------------------------------------------------------------
+
+u8 SPI_u8BufferTranceiverSynch (u8 * Copy_u8TData , u8 * Copy_u8RData , u8 Copy_u8BufferSize)
+{
+	u8 Local_u8ErrorState = E_OK ;
+	u8 Local_u8Counter = 0 ;
+	if ((Copy_u8TData != NULL) && (Copy_u8RData != NULL))
+	{
+		while (Local_u8Counter < Copy_u8BufferSize)
+		{
+			SPI_u8Tranceive(Copy_u8TData[Local_u8Counter] , &Copy_u8RData[Local_u8Counter]) ;
+			Local_u8Counter++ ;
+		}
+	}
+	else
+	{
+		Local_u8ErrorState = E_NOT_OK ;
+	}
 	return Local_u8ErrorState ;
 }
