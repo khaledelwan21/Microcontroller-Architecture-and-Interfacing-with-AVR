@@ -1,0 +1,53 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 7, 2026
+ *      Author: khaled
+ */
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "DIO_interface.h"
+#include "DIO_private.h"
+#include "SPI_interface.h"
+#include "SPI_private.h"
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#define F_CPU	8000000UL
+
+volatile u8 DataRecieve = 0;
+
+ISR(SPI_STC_vect)
+{
+	DataRecieve = SPDR;   // read the byte that just arrived (clears SPIF too)
+	SPDR = 5;              // immediately stage the reply for the next transfer
+
+	if (DataRecieve == 10)
+	{
+		TOG_BIT(PORTA, PIN0);
+	}
+}
+
+int main()
+{
+	DIO_SetPinDirection(PORTB, PIN5, DIO_INPUT);   // MOSI
+	DIO_SetPinDirection(PORTB, PIN6, DIO_OUTPUT);  // MISO
+	DIO_SetPinDirection(PORTB, PIN7, DIO_INPUT);   // SCK
+	DIO_SetPinDirection(PORTB, PIN4, DIO_INPUT);   // SS
+	DIO_SetPin_PullUp(PORTB, PIN4, PullUp);
+
+	DIO_SetPinDirection(PORTA, PIN0, DIO_OUTPUT);  // led
+
+	SPI_VoidInit();
+
+	SPDR = 5;   // preload first reply before any transfer happens
+
+	sei();      // enable global interrupts
+
+	while (1)
+	{
+		// everything handled inside ISR(SPI_STC_vect)
+	}
+
+	return 0;
+}

@@ -1,0 +1,55 @@
+/*
+ * main.c - DIAGNOSTIC VERSION
+ *
+ *  Created on: Sep 7, 2026
+ *      Author: khaled
+ */
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#include "DIO_interface.h"
+#include "DIO_private.h"
+#include "SPI_interface.h"
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#define F_CPU	8000000UL
+
+u8 DataRecieve = 0;
+u8 Result = 0;
+
+int main()
+{
+	DIO_SetPinDirection(PORTB, PIN5, DIO_OUTPUT); // MOSI
+	DIO_SetPinDirection(PORTB, PIN6, DIO_INPUT);  // MISO
+	DIO_SetPinDirection(PORTB, PIN7, DIO_OUTPUT); // SCK
+	DIO_SetPinDirection(PORTB, PIN4, DIO_OUTPUT); // SS
+	DIO_SetPinValue(PORTB, PIN4, DIO_HIGH);
+
+	DIO_SetPinDirection(PORTA, PIN0, DIO_OUTPUT); // led D1 -> transfer succeeded (no timeout)
+	DIO_SetPinDirection(PORTA, PIN1, DIO_OUTPUT); // led D_extra -> correct value received (5)
+
+	SPI_VoidInit();
+
+	while (1)
+	{
+		DIO_SetPinValue(PORTB, PIN4, DIO_LOW);
+
+		Result = SPI_u8Tranceive(10, &DataRecieve);
+
+		DIO_SetPinValue(PORTB, PIN4, DIO_HIGH);
+
+		if (Result == E_OK)
+		{
+			TOG_BIT(PORTA, PIN0)   // transfer completed successfully
+		}
+
+		if (DataRecieve == 5)
+		{
+			DIO_SetPinValue(PORTA, PIN1, DIO_HIGH);   // correct data received
+		}
+
+		_delay_ms(1000);
+	}
+
+	return 0;
+}
